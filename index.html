@@ -106,7 +106,7 @@
 
         // 给复制按钮添加回调函数
         $("#copybtn").click(() => {
-            navigator.clipboard.writeText(update_output() + ", " + $("#extra_tags").attr("value"))
+            navigator.clipboard.writeText(update_output())
             layer.msg('复制完成！<i class="layui-icon layui-icon-flag" style="font-size: auto; color: #1E9FFF;"></i>');
         })
 
@@ -145,8 +145,5 @@
                 if_the_first = false;
             }
         })
-        // 开启可拖动模式
-
     </script>
-
 </html>
