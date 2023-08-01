@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tags Generator</title>
+        <!-- 使用样式 -->
+        <link rel="stylesheet" href="./layui/css/layui.css">
+        <link rel="stylesheet" href="./kaede/css/kaede.css">
+        <link rel="stylesheet" href="./layui/css/dark_mode.css">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    </head>
+
+    <!-- 头部 -->
+
+    <body>
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend>Tags Generator <small>By Kaede</small></legend>
+        </fieldset>
+        <!-- 主要布局 -->
+        <fieldset class="layui-elem-field">
+            <legend>使用方法</legend>
+            <div class="layui-field-box">
+                选择需要的Tag，会自动跳转到上方的 <b>已选择的Tags</b> 中，你可以通过拖动来调整顺序<br>如果本地使用该程序，需要开启简单的服务器，否则会出现跨域错误！
+            </div>
+        </fieldset>
+        <fieldset class="layui-elem-field">
+            <legend>已选择的Tags</legend>
+            <div class="layui-field-box">
+                <div id="elements-container" class="elements-container">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset class="layui-elem-field">
+            <legend>生成的Tags</legend>
+            <div class="layui-field-box" id="final_tags"></div>
+        </fieldset>
+        <button class="layui-btn layui-btn-primary layui-border-blue" id="copybtn">复制Tags</button>
+        <!-- 修改结束 -->
+        <fieldset class="layui-elem-field layui-field-title">
+            <legend>可选择Tags</legend>
+        </fieldset>
+        <div class="layui-tab layui-tab-card" id="can_select_tags">
+            <ul class="layui-tab-title" id="tab_titles"></ul>
+            <div class="layui-tab-content" id="tab_choices"></div>
+        </div>
+    </body>
+    <!-- 使用各种js -->
+    <script src="./jquary/jquery-3.7.0.min.js"></script>
+    <script src="./layui/layui.js"></script>
+    <script src="./jquery_dragarrange/drag-arrange.min.js"></script>
+
+    <!-- 主要代码 -->
+    <script>
+        // Init
+        var layer = layui.layer;
+        // 写个方法，用来创建按钮
+        function make_a_button(info, exit_title) {
+            // 创建一个按钮的实例 
+            var tag_button = $(`<div class="kaede-button">${info}</div>`)
+            // 添加点击事件
+            tag_button.click(function () {
+                // 创建新的可拖动组件
+                new_drag = $(`<div class="draggable-element" id="${info}">${info}</div>`)
+                // 给可拖动组件添加事件，点击后恢复Tag
+                new_drag.click(function () {
+                    // 删除自身，通过ID进行
+                    $("#" + info).remove()
+                    // 更新页面
+                    update_target_text()
+                    // 创建标准按钮
+                    new_button = make_a_button(info, exit_title);
+                    // 把按钮放回来，这里可以用此时的路径
+                    // 此时的exit就行
+                    $(`#${exit_title}`).after(new_button)
+                })
+                // 删除这个按钮，然后在elements-container添加新内容
+                $("#elements-container").append(new_drag)
+                // 允许拖动
+                $('.draggable-element').arrangeable();
+                // 删除按钮
+                tag_button.remove()
+                // 更新页面
+                update_target_text()
+            })
+            return tag_button
+        }
+
+        // 遍历方法，主要是用来更新tags
+        function update_output(label_id = ".draggable-element") {
+            var tmp_array = []
+            // 这里直接通过class选择器即可
+            $(label_id).each(function (index, element) {
+                tmp_array.push($(element).attr("id"));
+            })
+            // 返回做好的字符串就好~
+            return tmp_array.join(", ")
+        }
+
+        // 更新目标元素的内容
+        function update_target_text(target = "#final_tags") {
+            // 一样，传入一个选择器就好
+            $(target).text(update_output())
+        }
+
+        // 给复制按钮添加回调函数
+        $("#copybtn").click(() => {
+            navigator.clipboard.writeText(update_output() + ", " + $("#extra_tags").attr("value"))
+            layer.msg('复制完成！<i class="layui-icon layui-icon-flag" style="font-size: auto; color: #1E9FFF;"></i>');
+        })
+
+        // 读取tags文件，保存为data这个变量
+        $.getJSON("data/tags.json", {}, function (data) {
+            var if_the_first = true;
+            // 直接用for循环读取
+            for (var tab_title in data) {
+                // 创建对应的Tab，这里是一个li
+                if (if_the_first) {
+                    var li = `<li class="layui-this">${tab_title}</li>`;
+                } else {
+                    var li = `<li>${tab_title}</li>`;
+                }
+                $("#tab_titles").append(li)
+                // 创建一个对应的内容模块
+                if (if_the_first) {
+                    var new_tab = $(`<div class="layui-tab-item layui-show"><div class="layui-form"></div></div>`)
+                } else {
+                    var new_tab = $(`<div class="layui-tab-item"><div class="layui-form"></div></div>`)
+                }
+                // 遍历传入的字典
+                for (var exit_title in data[tab_title]) {
+                    // 小标题部分
+                    $(new_tab).append(`<fieldset class="layui-elem-field layui-field-title" id="${exit_title}">
+                                             <legend>${exit_title}</legend>
+                                        </fieldset>`)
+                    info_length = data[tab_title][exit_title].length
+                    // 再遍历对应的tags
+                    data[tab_title][exit_title].forEach(info => {
+                        tag_button = make_a_button(info, exit_title);
+                        new_tab.append(tag_button)
+                    })
+                }
+                $("#tab_choices").append(new_tab)
+                if_the_first = false;
+            }
+        })
+        // 开启可拖动模式
+
+    </script>
+
+</html>
