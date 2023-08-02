@@ -1,214 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tags Generator</title>
-        <link rel="stylesheet" href="./css/kaede.css">
-        <link rel="stylesheet" href="./css/bootstrap.min.css">
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    </head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tags Generator</title>
+		<link rel="stylesheet" href="./css/kaede.css">
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+	</head>
 
-    <body class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <span class="fs-4">Tags Generator</span>
-            </a>
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link active">主页</a></li>
-                <li class="nav-item"><a href="./pages/about.html" class="nav-link">更新日志/关于</a></li>
-            </ul>
-        </header>
-        <!-- 介绍部分 -->
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">使用方法</h5>
-                <p>选择需要的Tag，会自动跳转到上方的 <b>已选择的Tags</b> 中，你可以通过拖动来调整顺序<br>点击选择的tag可以删除标签<br>如果本地使用该程序，需要开启简单的服务器，否则会出现跨域错误！</p>
-            </div>
-        </div>
-        <hr>
-        <!-- 设定区域 -->
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">设定区域</h5>
-                <div class="form-check form-switch form-check-inline">
-                    <input class="form-check-input" type="checkbox" role="switch" id="Chinese" checked>
-                    <label class="form-check-label" for="Chinese">中文</label>
-                </div>
-                <div class="form-check form-switch form-check-inline">
-                    <input class="form-check-input" type="checkbox" role="switch" id="English" checked>
-                    <label class="form-check-label" for="English">English</label>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <!-- 结束 -->
-        <div class="card" style="min-height: 150px;">
-            <div class="card-body" id="elements-container">
-                <h5 class="card-title">已选择的Tags</h5>
-            </div>
-        </div>
-        <hr>
-        <div class="card">
-            <div class="card-body" id="elements-container">
-                <div class="input-group">
-                    <span class="input-group-text">生成的Tags</span>
-                    <textarea class="form-control" aria-label="With textarea" id="final_tags"></textarea>
-                </div>
-                <!-- 复制按钮 -->
-                <br>
-                <button type="button" class="btn btn-outline-primary" id="copybtn">复制Tags</button>
-            </div>
-        </div>
-        <hr>
-        <!-- 修改结束 -->
-        <div class="card">
-            <div class="card-body" id="elements-container">
-                <h5 class="card-title">可选择Tags</h5>
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                </ul>
-                <!-- Tab对应内容页 -->
-                <div class="tab-content" id="nav-tabContent">
-                </div>
-            </div>
-        </div>
-    </body>
-    <!-- 使用各种js -->
-    <script src="./js/jquery-3.7.0.min.js"></script>
-    <script src="./js/drag-arrange.min.js"></script>
+	<body class="container">
+		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+			<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+				<span class="fs-4">Tags Generator</span>
+			</a>
+			<ul class="nav nav-pills">
+				<li class="nav-item"><a href="#" class="nav-link active">主页</a></li>
+				<li class="nav-item"><a href="./pages/about.html" class="nav-link">更新日志/关于</a></li>
+			</ul>
+		</header>
+		<!-- 介绍部分 -->
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">使用方法</h5>
+				<p>选择需要的Tag，会自动跳转到上方的 <b>已选择的Tags</b>
+					中，你可以通过拖动来调整顺序<br>点击选择的tag可以删除标签<br>如果本地使用该程序，需要开启简单的服务器，否则会出现跨域错误！</p>
+			</div>
+		</div>
+		<hr>
+		<!-- 设定区域 -->
+		<div class="card">
+			<div class="card-body">
+				<h5 class="card-title">设定区域</h5>
+				<div class="form-check form-switch form-check-inline">
+					<input class="form-check-input" type="checkbox" role="switch" id="Chinese" checked>
+					<label class="form-check-label" for="Chinese">中文</label>
+				</div>
+				<div class="form-check form-switch form-check-inline">
+					<input class="form-check-input" type="checkbox" role="switch" id="English" checked>
+					<label class="form-check-label" for="English">English</label>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<!-- 结束 -->
+		<div class="card" style="min-height: 150px;">
+			<div class="card-body" id="elements-container">
+				<h5 class="card-title">已选择的Tags</h5>
+			</div>
+		</div>
+		<hr>
+		<div class="card">
+			<div class="card-body" id="elements-container">
+				<div class="input-group">
+					<span class="input-group-text">生成的Tags</span>
+					<textarea class="form-control" aria-label="With textarea" id="final_tags"></textarea>
+				</div>
+				<!-- 复制按钮 -->
+				<br>
+				<button type="button" class="btn btn-outline-primary" id="copybtn">复制Tags</button>
+			</div>
+		</div>
+		<hr>
+		<!-- 修改结束 -->
+		<div class="card">
+			<div class="card-body" id="elements-container">
+				<h5 class="card-title">可选择Tags</h5>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+				</ul>
+				<!-- Tab对应内容页 -->
+				<div class="tab-content" id="nav-tabContent">
+				</div>
+			</div>
+		</div>
+	</body>
+	<!-- 使用各种js -->
+	<script src="./js/jquery-3.7.0.min.js"></script>
+	<script src="./js/drag-arrange.min.js"></script>
 
-    <!-- 主要代码 -->
-    <script>
-        // Init
-        var database_url = "./data/tags.json"
-        // 写个方法，用来创建按钮
-        function make_a_button(cn, en, exit_title) {
-            // 创建一个按钮的实例 
-            var tag_button = $(`<div class="kaede-button"><span class="cn">${cn}</span><span class="en">${en}</span></div>`)
-            // 添加点击事件
-            tag_button.click(function () {
-                // 创建新的可拖动组件
-                new_drag = $(`<div class="draggable-element" id="${cn}" tag="${en}"><span class="cn">${cn}</span><span class="en">${en}</span></div>`)
-                // 给可拖动组件添加事件，点击后恢复Tag
-                new_drag.click(function () {
-                    // 删除自身，通过ID进行
-                    $("#" + cn).remove()
-                    // 更新页面
-                    update_target_text()
-                    // 创建标准按钮
-                    new_button = make_a_button(cn, en, exit_title);
-                    // 把按钮放回来，这里可以用此时的路径
-                    // 此时的exit就行
-                    $(`#${exit_title}`).after(new_button)
-                })
-                new_drag.mouseup(() => { update_target_text() })
-                // 删除这个按钮，然后在elements-container添加新内容
-                $("#elements-container").append(new_drag)
-                // 允许拖动
-                $('.draggable-element').arrangeable();
-                // 删除按钮
-                tag_button.remove()
-                // 更新页面
-                update_target_text()
-            })
-            return tag_button
-        }
+	<!-- 主要代码 -->
+	<script>
+		// Init
+		var database_url = "./data/tags.json"
+		// 写个方法，用来创建按钮
+		function make_a_button(cn, en, exit_title) {
+			// 创建一个按钮的实例 
+			var tag_button = $(`<div class="kaede-button"><span class="cn">${cn}</span><span class="en">${en}</span></div>`)
+			// 添加点击事件
+			tag_button.click(function() {
+				// 创建新的可拖动组件
+				new_drag = $(
+					`<div class="draggable-element" id="${cn}" tag="${en}"><span class="cn">${cn}</span><span class="en">${en}</span></div>`
+					)
+				// 给可拖动组件添加事件，点击后恢复Tag
+				new_drag.click(function() {
+					// 删除自身，通过ID进行
+					$("#" + cn).remove()
+					// 更新页面
+					update_target_text()
+					// 创建标准按钮
+					new_button = make_a_button(cn, en, exit_title);
+					// 把按钮放回来，这里可以用此时的路径
+					// 此时的exit就行
+					$(`#${exit_title}`).after(new_button)
+				})
+				new_drag.mouseup(() => {
+					update_target_text()
+				})
+				// 删除这个按钮，然后在elements-container添加新内容
+				$("#elements-container").append(new_drag)
+				// 允许拖动
+				$('.draggable-element').arrangeable();
+				// 删除按钮
+				tag_button.remove()
+				// 更新页面
+				update_target_text()
+			})
+			return tag_button
+		}
 
-        // 遍历方法，主要是用来更新tags
-        function update_output(label_id = ".draggable-element") {
-            var tmp_array = []
-            // 这里直接通过class选择器即可
-            $(label_id).each(function (index, element) {
-                tmp_array.push($(element).attr("tag"));
-            })
-            // 返回做好的字符串就好~
-            return tmp_array.join(", ")
-        }
+		// 遍历方法，主要是用来更新tags
+		function update_output(label_id = ".draggable-element") {
+			var tmp_array = []
+			// 这里直接通过class选择器即可
+			$(label_id).each(function(index, element) {
+				tmp_array.push($(element).attr("tag"));
+			})
+			// 返回做好的字符串就好~
+			return tmp_array.join(", ")
+		}
 
-        // 更新目标元素的内容
-        function update_target_text(target = "#final_tags") {
-            // 一样，传入一个选择器就好
-            $(target).text(update_output())
-        }
+		// 更新目标元素的内容
+		function update_target_text(target = "#final_tags") {
+			// 一样，传入一个选择器就好
+			$(target).text(update_output())
+		}
 
-        // 给复制按钮添加回调函数
-        $("#copybtn").click(() => {
-            // 先更新顺序
-            update_target_text()
-            navigator.clipboard.writeText(update_output())
-            alert('复制完成！');
-        })
+		// 给复制按钮添加回调函数
+		$("#copybtn").click(() => {
+			// 先更新顺序
+			update_target_text()
+			navigator.clipboard.writeText(update_output())
+			alert('复制完成！');
+		})
 
-        // 切换中英文的函数
-        // 给切换中文按钮修改一下
-        $("#Chinese").click(() => {
-            // 获取所有的CN
-            var all_cns = $(".cn");
-            // 判断一下状态
-            if ($("#Chinese").prop("checked")) {
-                $("#Chinese").attr("checked", "checked")
-                all_cns.show()
-            } else {
-                $("#Chinese").attr("checked", false)
-                all_cns.hide()
-            }
-        })
-        // 英文
-        $("#English").click(() => {
-            // 获取所有的CN
-            var all_cns = $(".en");
-            // 判断一下状态
-            if ($("#English").prop("checked")) {
-                $("#English").attr("checked", "checked")
-                all_cns.show()
-            } else {
-                $("#English").attr("checked", false)
-                all_cns.hide()
-            }
-        })
+		// 切换中英文的函数
+		// 给切换中文按钮修改一下
+		$("#Chinese").click(() => {
+			// 获取所有的CN
+			var all_cns = $(".cn");
+			// 判断一下状态
+			if ($("#Chinese").prop("checked")) {
+				$("#Chinese").attr("checked", "checked")
+				all_cns.show()
+			} else {
+				$("#Chinese").attr("checked", false)
+				all_cns.hide()
+			}
+		})
+		// 英文
+		$("#English").click(() => {
+			// 获取所有的CN
+			var all_cns = $(".en");
+			// 判断一下状态
+			if ($("#English").prop("checked")) {
+				$("#English").attr("checked", "checked")
+				all_cns.show()
+			} else {
+				$("#English").attr("checked", false)
+				all_cns.hide()
+			}
+		})
 
-        // 读取tags文件，保存为data这个变量
-        $.getJSON(database_url, {}, function (data) {
-            var if_the_first = true;
-            // 直接用for循环读取
-            for (var tab_title in data) {
-                // 创建对应的Tab，这里是一个li
-                if (if_the_first) {
-                    var li = `<li class="nav-item" role="presentation">
+		// 读取tags文件，保存为data这个变量
+		$.getJSON(database_url, {}, function(data) {
+			var if_the_first = true;
+			// 直接用for循环读取
+			for (var tab_title in data) {
+				// 创建对应的Tab，这里是一个li
+				if (if_the_first) {
+					var li = `<li class="nav-item" role="presentation">
                         <button class="nav-link active" id="pills-${tab_title}-tab" data-bs-toggle="tab" data-bs-target="#pills-${tab_title}" type="button" role="tab" aria-controls="pills-${tab_title}" aria-selected="true">${tab_title}</button>
                     </li>`
-                } else {
-                    var li = `<li class="nav-item" role="presentation">
+				} else {
+					var li = `<li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-${tab_title}-tab" data-bs-toggle="tab" data-bs-target="#pills-${tab_title}" type="button" role="tab" aria-controls="pills-${tab_title}" aria-selected="false">${tab_title}</button>
                     </li>`;
-                }
-                $("#myTab").append(li)
-                // 创建一个对应的内容模块
-                if (if_the_first) {
-                    var new_tab = $(`<div class="tab-pane fade show active" id="pills-${tab_title}" role="tabpanel" aria-labelledby="pills-${tab_title}-tab" tabindex="0"></div>`)
-                } else {
-                    var new_tab = $(`<div class="tab-pane fade" id="pills-${tab_title}" role="tabpanel" aria-labelledby="pills-${tab_title}-tab" tabindex="0"></div>`)
-                }
-                // 遍历传入的字典
-                for (var exit_title in data[tab_title]) {
-                    // 小标题部分
-                    $(new_tab).append(`<fieldset class="layui-elem-field layui-field-title" id="${exit_title}">
+				}
+				$("#myTab").append(li)
+				// 创建一个对应的内容模块
+				if (if_the_first) {
+					var new_tab = $(
+						`<div class="tab-pane fade show active" id="pills-${tab_title}" role="tabpanel" aria-labelledby="pills-${tab_title}-tab" tabindex="0"></div>`
+						)
+				} else {
+					var new_tab = $(
+						`<div class="tab-pane fade" id="pills-${tab_title}" role="tabpanel" aria-labelledby="pills-${tab_title}-tab" tabindex="0"></div>`
+						)
+				}
+				// 遍历传入的字典
+				for (var exit_title in data[tab_title]) {
+					// 小标题部分
+					$(new_tab).append(`<fieldset class="layui-elem-field layui-field-title" id="${exit_title}">
                                              <legend>${exit_title}</legend>
                                         </fieldset>`)
-                    info_length = data[tab_title][exit_title].length
-                    // 再遍历对应的tags
-                    data[tab_title][exit_title].forEach(info => {
-                        tag_button = make_a_button(info[0], info[1], exit_title);
-                        new_tab.append(tag_button)
-                    })
-                }
-                $("#nav-tabContent").append(new_tab)
-                if_the_first = false;
-            }
-        })
-    </script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+					info_length = data[tab_title][exit_title].length
+					// 再遍历对应的tags
+					data[tab_title][exit_title].forEach(info => {
+						tag_button = make_a_button(info[0], info[1], exit_title);
+						new_tab.append(tag_button)
+					})
+				}
+				$("#nav-tabContent").append(new_tab)
+				if_the_first = false;
+			}
+		})
+	</script>
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
 
 </html>
