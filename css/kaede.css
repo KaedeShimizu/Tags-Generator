@@ -25,9 +25,6 @@
 }
 
 body {
-    font-family: arial;
-    background: rgb(242, 244, 246);
-    padding: 20px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -35,7 +32,7 @@ body {
 }
 
 
-.kaede-button{
+.kaede-button {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -54,7 +51,7 @@ body {
     border: 2px solid rgb(55, 60, 62);
 }
 
-.kaede-button:hover{
+.kaede-button:hover {
     cursor: pointer;
     font-size: 14px;
     line-height: 28px;
@@ -67,8 +64,4 @@ body {
     border-radius: 2px;
     background-color: #0386b9 !important;
     border: 2px solid #00709c;
-}
-
-.layui-tab-content{
-    margin: 0 0 5px 10px;
 }
