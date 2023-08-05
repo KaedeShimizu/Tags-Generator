@@ -1,223 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tags Generator</title>
+    <link rel="stylesheet" href="./kaede/kaede.css" />
+    <link rel="stylesheet" href="./layui/css/layui.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Tags Generator</title>
-		<link rel="stylesheet" href="./css/kaede.css">
-		<link rel="stylesheet" href="./css/bootstrap.min.css">
-		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-	</head>
+  <body style="padding: 10px">
+    <!-- 重新开始构建页面 -->
+    <div style="display: flex; align-items: center">
+      <h2 style="display: inline-block">Tags Generator <small>V0.5</small></h2>
+      <button
+        class="layui-btn layui-btn-primary layui-border-green"
+        style="margin-left: 10px"
+        lay-on="how_to_use"
+      >
+        如何使用
+      </button>
+      <button
+        class="layui-btn layui-btn-primary layui-border-green"
+        style="margin-left: 10px"
+        lay-on="about"
+      >
+        关于此项目
+      </button>
+    </div>
+    <hr />
+    <fieldset class="layui-elem-field" style="align-items: center">
+      <legend>设定区域</legend>
+      <div class="layui-field-box">
+        <div class="layui-form">
+          <div class="layui-form-item">
+            <input
+              type="checkbox"
+              value="cn"
+              title="中文"
+              lay-skin="tag"
+              lay-filter="demo-checkbox-filter"
+              checked
+            />
+            <input
+              type="checkbox"
+              value="en"
+              title="English"
+              lay-skin="tag"
+              lay-filter="demo-checkbox-filter"
+              checked
+            />
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset class="layui-elem-field" style="min-height: 6.5rem">
+      <legend>已选择的Tags</legend>
+      <div class="layui-field-box" id="tags_selected"></div>
+    </fieldset>
+    <fieldset class="layui-elem-field">
+      <legend>生成的文字Tags</legend>
+      <div style="padding: 10px">
+        <div class="layui-form">
+          <div class="layui-form-item">
+            <textarea
+              id="final_tags"
+              disabled
+              placeholder="选择的Tags会在这里显示,你无法修改"
+              class="layui-textarea"
+            ></textarea>
+          </div>
+          <div class="layui-form-item">
+            <button
+              class="layui-btn layui-btn-primary layui-border-green"
+              lay-submit
+              lay-filter="copy"
+            >
+              复制
+            </button>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <!-- Tags展示区域 -->
+    <div class="layui-tab layui-tab-card" overflow>
+      <ul class="layui-tab-title" id="myTab"></ul>
+      <div
+        class="layui-tab-content"
+        id="nav-tabContent"
+        style="padding: 10px"
+      ></div>
+    </div>
+    <!-- 负面Tags -->
+    <fieldset class="layui-elem-field">
+      <legend>负面Tags</legend>
+      <div style="padding: 10px">
+        <div class="layui-form">
+          <input
+            type="text"
+            placeholder="文本框"
+            class="layui-input"
+            value="lowres, bad anatomy, text,cropped,low quality,(mutation, poorly drawn :1.2) ,normal quality, obesity,bad proportions,unnatural body,bad shadow, uncoordinated body, worst quality,censored,low quality,signature,watermark, username, blurry,big muscles,3D, 3D game, 3D game scene, 3D character,censored,mosaic,gross proportions, duplicate, morbid, mutilated, disfigured, malformed,mutated,anatomical nonsense,text font ui, error,(malformed limbs), ugly,shit,((A rough face)),dirty face,bad face, fused face, poorly drawn face, cloned face, big face, long face, beard,long neck,short neck,no neck,bad collarbone, fused collarbone, missing collarbone, liquid collarbone,((too big body)), (long body :1.3),missing fingers,extra digits, one hand with less than 5 fingers ,one hand with more than 5 digits,(mutated hands and fingers:1.5 ),short arms,long arms, (((missing arms))), extra arms, poorly drawn hands,((missing limb)), fused digit, missing digit, bad digit, liquid digit,bad gloves, poorly drawn gloves, fused gloves,(more than 2 thighs),(more than 2 legs),missing thighs, missing calf, missing legs,extra thighs, ((more than 2 thighs)), extra calf, fused calf, extra legs, bad knee, extra knee, more than 2 legs, bad tails,,huge haunch, huge thighs, huge calf, disappearing thigh,disappearing calf, disappearing legs,  malformed feet, extra feet, bad feet, poorly drawn feet, fused feet, missing feet,bad feet"
+          />
+        </div>
+      </div>
+    </fieldset>
+  </body>
+  <!-- 使用各种js -->
+  <script src="./js/jquery-3.7.0.min.js"></script>
+  <!-- 使用新的可拖动元素库 -->
+  <script src="./js/Sortable.min.js"></script>
+  <script src="./layui/layui.js"></script>
+  <!-- // 使用layui -->
+  <script>
+	// 添加需要的事件
+    layui.use(() => {
+      var layer = layui.layer;
+      var util = layui.util;
+      var form = layui.form;
+      // 按钮事件
+      util.on("lay-on", {
+        // 如何使用按钮的回调
+        how_to_use: () => {
+          // 使用页面层展示
+          layer.open({
+            type: 1,
+            title: "如何使用？",
+            shadeClose: true, // 点击空白区域关闭
+            content:
+              '<ul style="padding: 20px;"><li>选择需要的Tag，会自动跳转到上方的 <b>已选择的Tags</b>中</li><li>你可以通过拖动来调整顺序</li><li>点击选择的tag可以删除标签</li><li>如果本地使用该程序，需要开启简单的服务器，否则会出现跨域错误！</li></ul>',
+          });
+        },
+        // 关于页面
+        about: () => {
+          // 一样，使用页面展示就好
+          layer.open({
+            type: 1,
+            title: "关于此项目",
+            shadeClose: true, // 点击空白区域关闭
+            content: `
+						<div style="padding:10px;">
+						<fieldset class="layui-elem-field">
+						<legend>为什么要写这个项目</legend>
+						<div class="layui-field-box">
+							很简单，因为我要用，而且我大部分可能需要本地使用，别人的用起来不方便，干脆就自己做一个咯~
+						</div>
+						</fieldset>
+						<hr>
+						<fieldset class="layui-elem-field">
+						<legend>项目相关</legend>
+						<div class="layui-field-box">
+							最后更新日期：<span class="layui-badge layui-bg-green">23.8.4</span>
+							<hr>
+							作者：<span class="layui-badge layui-bg-green">Kaede</span>
+							<hr>
+							UI：<span class="layui-badge layui-bg-green">LayUI</span>
+						</div>
+						</fieldset>
+						</div>
+						`,
+          });
+        },
+      });
+      // 表单事件
+      form.on("checkbox(demo-checkbox-filter)", function (data) {
+        var elem = data.elem; // 获得 checkbox 原始 DOM 对象
+        var checked = elem.checked; // 获得 checkbox 选中状态
+        var value = elem.value; // 获得 checkbox 值
+        var othis = data.othis; // 获得 checkbox 元素被替换后的 jQuery 对象
 
-	<body class="container">
-		<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-			<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-				<span class="fs-4">Tags Generator</span>
-			</a>
-			<ul class="nav nav-pills">
-				<li class="nav-item"><a href="#" class="nav-link active">主页</a></li>
-				<li class="nav-item"><a href="./pages/about.html" class="nav-link">更新日志/关于</a></li>
-			</ul>
-		</header>
-		<!-- 介绍部分 -->
-		<div class="card">
-			<div class="card-body">
-				<h5 class="card-title">使用方法</h5>
-				<p>选择需要的Tag，会自动跳转到上方的 <b>已选择的Tags</b>
-					中，你可以通过拖动来调整顺序<br>点击选择的tag可以删除标签<br>如果本地使用该程序，需要开启简单的服务器，否则会出现跨域错误！</p>
-			</div>
-		</div>
-		<hr>
-		<!-- 设定区域 -->
-		<div class="card">
-			<div class="card-body">
-				<h5 class="card-title">设定区域</h5>
-				<div class="form-check form-switch form-check-inline">
-					<input class="form-check-input" type="checkbox" role="switch" id="Chinese" checked>
-					<label class="form-check-label" for="Chinese">中文</label>
-				</div>
-				<div class="form-check form-switch form-check-inline">
-					<input class="form-check-input" type="checkbox" role="switch" id="English" checked>
-					<label class="form-check-label" for="English">English</label>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<!-- 结束 -->
-		<div class="card" style="min-height: 150px;">
-			<div class="card-body" id="elements-container">
-				<h5 class="card-title">已选择的Tags</h5>
-			</div>
-		</div>
-		<hr>
-		<div class="card">
-			<div class="card-body" id="elements-container">
-				<div class="input-group">
-					<span class="input-group-text">生成的Tags</span>
-					<textarea class="form-control" aria-label="With textarea" id="final_tags"></textarea>
-				</div>
-				<!-- 复制按钮 -->
-				<br>
-				<button type="button" class="btn btn-outline-primary" id="copybtn">复制Tags</button>
-			</div>
-		</div>
-		<hr>
-		<!-- 修改结束 -->
-		<div class="card">
-			<div class="card-body" id="elements-container">
-				<h5 class="card-title">可选择Tags</h5>
-				<ul class="nav nav-tabs" id="myTab" role="tablist">
-				</ul>
-				<!-- Tab对应内容页 -->
-				<div class="tab-content" id="nav-tabContent">
-				</div>
-			</div>
-		</div>
-	</body>
-	<!-- 使用各种js -->
-	<script src="./js/jquery-3.7.0.min.js"></script>
-	<script src="./js/drag-arrange.min.js"></script>
+        // 通过value判断属于什么
+        // 中文切换按钮
+        if (value == "cn") {
+          // 获取所有的CN
+          var all_cns = $(".cn");
+          // 判断一下状态
+          if (checked) {
+            all_cns.show();
+          } else {
+            all_cns.hide();
+          }
+        } else if (value == "en") {
+          // 获取所有的en
+          var all_ens = $(".en");
+          // 判断一下状态
+          if (checked) {
+            all_ens.show();
+          } else {
+            all_ens.hide();
+          }
+        }
+      });
+      // 提交事件
+      form.on("submit(copy)", function () {
+        // 直接复制就好，这里没有太多的内容了
+        // 先更新一下顺序
+        update_target_text();
+        navigator.clipboard.writeText(update_output());
+        layer.msg("复制完成~！");
+        return false; // 阻止默认 form 跳转
+      });
+    });
+  </script>
+  <!-- 可移动组件 -->
+  <script>
+    new Sortable(tags_selected, {
+      swapThreshold: 1,
+      animation: 150,
+      // 设定结束拖动的事件，也就是更新一下
+      onEnd: () => {
+        // 这里就不传参数了，直接更新一下列表就好~
+        update_target_text();
+      },
+    });
+  </script>
+  <!-- 主代码 -->
+  <script>
+    // Init
+    var database_url = "./data/tags.json";
+    // 写个方法，用来创建按钮
+    function make_a_button(cn, en, exit_title) {
+      // 创建一个按钮的实例
+      var tag_button = $(
+        `<div class="kaede-button"><span class="cn">${cn}</span> | <span class="en">${en}</span></div>`
+      );
+      // 添加点击事件
+      tag_button.click(function () {
+        // 创建新的可拖动组件
+        new_drag = $(
+          `<div class="draggable-element" id="${cn}" tag="${en}"><span class="cn">${cn}</span> | <span class="en">${en}</span></div>`
+        );
+        // 给可拖动组件添加事件，点击后恢复Tag
+        new_drag.click(function () {
+          // 删除自身，通过ID进行
+          $("#" + cn).remove();
+          // 更新页面
+          update_target_text();
+          // 创建标准按钮
+          new_button = make_a_button(cn, en, exit_title);
+          // 把按钮放回来，这里可以用此时的路径
+          // 此时的exit就行
+          $(`#${exit_title}`).after(new_button);
+        });
+        new_drag.mouseup(() => {
+          update_target_text();
+        });
+        // 删除这个按钮，然后添加内容
+        $("#tags_selected").append(new_drag);
+        // 删除按钮
+        tag_button.remove();
+        // 更新页面
+        update_target_text();
+      });
+      return tag_button;
+    }
 
-	<!-- 主要代码 -->
-	<script>
-		// Init
-		var database_url = "./data/tags.json"
-		// 写个方法，用来创建按钮
-		function make_a_button(cn, en, exit_title) {
-			// 创建一个按钮的实例 
-			var tag_button = $(`<div class="kaede-button"><span class="cn">${cn}</span><span class="en">${en}</span></div>`)
-			// 添加点击事件
-			tag_button.click(function() {
-				// 创建新的可拖动组件
-				new_drag = $(
-					`<div class="draggable-element" id="${cn}" tag="${en}"><span class="cn">${cn}</span><span class="en">${en}</span></div>`
-					)
-				// 给可拖动组件添加事件，点击后恢复Tag
-				new_drag.click(function() {
-					// 删除自身，通过ID进行
-					$("#" + cn).remove()
-					// 更新页面
-					update_target_text()
-					// 创建标准按钮
-					new_button = make_a_button(cn, en, exit_title);
-					// 把按钮放回来，这里可以用此时的路径
-					// 此时的exit就行
-					$(`#${exit_title}`).after(new_button)
-				})
-				new_drag.mouseup(() => {
-					update_target_text()
-				})
-				// 删除这个按钮，然后在elements-container添加新内容
-				$("#elements-container").append(new_drag)
-				// 允许拖动
-				$('.draggable-element').arrangeable();
-				// 删除按钮
-				tag_button.remove()
-				// 更新页面
-				update_target_text()
-			})
-			return tag_button
-		}
+    // 遍历方法，主要是用来更新tags
+    function update_output(label_id = ".draggable-element") {
+      var tmp_array = [];
+      // 这里直接通过class选择器即可
+      $(label_id).each(function (index, element) {
+        tmp_array.push($(element).attr("tag"));
+      });
+      // 返回做好的字符串就好~
+      return tmp_array.join(", ");
+    }
 
-		// 遍历方法，主要是用来更新tags
-		function update_output(label_id = ".draggable-element") {
-			var tmp_array = []
-			// 这里直接通过class选择器即可
-			$(label_id).each(function(index, element) {
-				tmp_array.push($(element).attr("tag"));
-			})
-			// 返回做好的字符串就好~
-			return tmp_array.join(", ")
-		}
+    // 更新目标元素的内容
+    function update_target_text(target = "#final_tags") {
+      // 一样，传入一个选择器就好
+      $(target).text(update_output());
+    }
 
-		// 更新目标元素的内容
-		function update_target_text(target = "#final_tags") {
-			// 一样，传入一个选择器就好
-			$(target).text(update_output())
-		}
-
-		// 给复制按钮添加回调函数
-		$("#copybtn").click(() => {
-			// 先更新顺序
-			update_target_text()
-			navigator.clipboard.writeText(update_output())
-			alert('复制完成！');
-		})
-
-		// 切换中英文的函数
-		// 给切换中文按钮修改一下
-		$("#Chinese").click(() => {
-			// 获取所有的CN
-			var all_cns = $(".cn");
-			// 判断一下状态
-			if ($("#Chinese").prop("checked")) {
-				$("#Chinese").attr("checked", "checked")
-				all_cns.show()
-			} else {
-				$("#Chinese").attr("checked", false)
-				all_cns.hide()
-			}
-		})
-		// 英文
-		$("#English").click(() => {
-			// 获取所有的CN
-			var all_cns = $(".en");
-			// 判断一下状态
-			if ($("#English").prop("checked")) {
-				$("#English").attr("checked", "checked")
-				all_cns.show()
-			} else {
-				$("#English").attr("checked", false)
-				all_cns.hide()
-			}
-		})
-
-		// 读取tags文件，保存为data这个变量
-		$.getJSON(database_url, {}, function(data) {
-			var if_the_first = true;
-			// 直接用for循环读取
-			for (var tab_title in data) {
-				// 创建对应的Tab，这里是一个li
-				if (if_the_first) {
-					var li = `<li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-${tab_title}-tab" data-bs-toggle="tab" data-bs-target="#pills-${tab_title}" type="button" role="tab" aria-controls="pills-${tab_title}" aria-selected="true">${tab_title}</button>
-                    </li>`
-				} else {
-					var li = `<li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-${tab_title}-tab" data-bs-toggle="tab" data-bs-target="#pills-${tab_title}" type="button" role="tab" aria-controls="pills-${tab_title}" aria-selected="false">${tab_title}</button>
-                    </li>`;
-				}
-				$("#myTab").append(li)
-				// 创建一个对应的内容模块
-				if (if_the_first) {
-					var new_tab = $(
-						`<div class="tab-pane fade show active" id="pills-${tab_title}" role="tabpanel" aria-labelledby="pills-${tab_title}-tab" tabindex="0"></div>`
-						)
-				} else {
-					var new_tab = $(
-						`<div class="tab-pane fade" id="pills-${tab_title}" role="tabpanel" aria-labelledby="pills-${tab_title}-tab" tabindex="0"></div>`
-						)
-				}
-				// 遍历传入的字典
-				for (var exit_title in data[tab_title]) {
-					// 小标题部分
-					$(new_tab).append(`<fieldset class="layui-elem-field layui-field-title" id="${exit_title}">
+    // 读取tags文件，保存为data这个变量
+    $.getJSON(database_url, {}, function (data) {
+      var if_the_first = true;
+      // 直接用for循环读取
+      for (var tab_title in data) {
+        // 创建对应的Tab，这里是一个li
+        if (if_the_first) {
+          var li = `<li class="layui-this">${tab_title}</li>`;
+        } else {
+          var li = `<li>${tab_title}</li>`;
+        }
+        // 添加Tab页面
+        $("#myTab").append(li);
+        // 创建一个对应的内容模块
+        if (if_the_first) {
+          var new_tab = $(`<div class="layui-tab-item layui-show"></div>`);
+        } else {
+          var new_tab = $(`<div class="layui-tab-item"></div>`);
+        }
+        // 遍历传入的字典
+        for (var exit_title in data[tab_title]) {
+          // 小标题部分
+          $(new_tab)
+            .append(`<fieldset class="layui-elem-field layui-field-title" id="${exit_title}">
                                              <legend>${exit_title}</legend>
-                                        </fieldset>`)
-					info_length = data[tab_title][exit_title].length
-					// 再遍历对应的tags
-					data[tab_title][exit_title].forEach(info => {
-						tag_button = make_a_button(info[0], info[1], exit_title);
-						new_tab.append(tag_button)
-					})
-				}
-				$("#nav-tabContent").append(new_tab)
-				if_the_first = false;
-			}
-		})
-	</script>
-	<script src="./js/bootstrap.bundle.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
+                                        </fieldset>`);
+          info_length = data[tab_title][exit_title].length;
+          // 再遍历对应的tags
+          data[tab_title][exit_title].forEach((info) => {
+            tag_button = make_a_button(info[0], info[1], exit_title);
+            new_tab.append(tag_button);
+          });
+        }
+        $("#nav-tabContent").append(new_tab);
+        if_the_first = false;
+      }
+    });
 
+	// 更新一下，防止tags超出去
+	layui.element.init()
+  </script>
 </html>

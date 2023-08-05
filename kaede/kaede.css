@@ -1,0 +1,73 @@
+/* 对部分CSS进行重新定义，或者修改 */
+
+/* 拖拽的地方 */
+#tags_selected {
+  min-height: 100px;
+  height: auto;
+  line-height: 20px;
+  resize: vertical;
+  border-radius: 15px;
+}
+
+/* 拖拽的内容 */
+.draggable-element {
+  cursor: move;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 5px 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  /* 颜色部分 */
+  color: white;
+  background-color: #16b777 !important;
+  border: 2px solid #13a86d;
+  border-radius: 0.125rem;
+}
+
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.kaede-button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 5px 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  /* 颜色部分 */
+  color: rgb(17, 17, 17);
+  border-radius: 2px;
+  background-color: white !important;
+  border: 2px solid #d3d3d3;
+  border-radius: 0.125rem;
+}
+
+.kaede-button:hover {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 28px;
+  margin: 5px 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: inline-block;
+  /* 颜色部分 */
+  color: white;
+  border-radius: 2px;
+  background-color: #16b777 !important;
+  border: 2px solid #13a86d;
+}
+
+/* 对layui的一些元素进行修改 */
+.layui-tab-title li {
+  min-width: 0px !important;
+}

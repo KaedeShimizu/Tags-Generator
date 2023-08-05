@@ -1,4340 +1,1205 @@
 {
-    "常用": {
-        "图像优化": [
-            [
-                "大师作品",
-                "masterpiece"
-            ],
-            [
-                "最好画质",
-                "best quality"
-            ],
-            [
-                "更高质量",
-                "official art"
-            ],
-            [
-                "高细节",
-                "highly detailed"
-            ],
-            [
-                "超高分辨率",
-                "absurdres"
-            ],
-            [
-                "8k分辨率",
-                "8k resolution"
-            ]
-        ],
-        "镜头视角": [
-            [
-                "景深",
-                "Depth of field"
-            ],
-            [
-                "全景",
-                "Panorama"
-            ],
-            [
-                "长焦镜头",
-                "telephoto lens"
-            ],
-            [
-                "微距镜头",
-                "macro lens"
-            ],
-            [
-                "全身镜头",
-                "full body"
-            ],
-            [
-                "中景镜头",
-                "medium shot"
-            ],
-            [
-                "七分身镜头",
-                "cowboy shot"
-            ],
-            [
-                "半身像",
-                "(profile picture)"
-            ],
-            [
-                "写实肖像",
-                "close up portrait"
-            ],
-            [
-                "第一人称视角",
-                "POV"
-            ],
-            [
-                "鱼眼镜头",
-                "fisheye"
-            ],
-            [
-                "部分水下拍摄",
-                "partially underwater shot"
-            ]
-        ],
-        "其他常用": [
-            [
-                "精致五官",
-                "exquisite facial features"
-            ],
-            [
-                "完美的脸",
-                "prefect face"
-            ],
-            [
-                "发光皮肤",
-                "shiny skin"
-            ],
-            [
-                "抽象背景",
-                "abstract background"
-            ],
-            [
-                "蒸汽朋克",
-                "steampunk"
-            ],
-            [
-                "赛博朋克",
-                "cyberpunk"
-            ]
-        ]
-    },
-    "人物": {
-        "人物": [
-            [
-                "女性",
-                "female"
-            ],
-            [
-                "男性",
-                "male"
-            ],
-            [
-                "女孩",
-                "girl"
-            ],
-            [
-                "男孩",
-                "boy"
-            ],
-            [
-                "正太",
-                "shota"
-            ],
-            [
-                "萝莉",
-                "loli"
-            ],
-            [
-                "美少女",
-                "bishoujo"
-            ],
-            [
-                "美少男",
-                "bishounen"
-            ],
-            [
-                "辣妹",
-                "gyaru"
-            ],
-            [
-                "大小姐",
-                "ojousama"
-            ],
-            [
-                "Q版人物",
-                "chibi"
-            ],
-            [
-                "胖子",
-                "fat man"
-            ],
-            [
-                "伪娘",
-                "crossdressing"
-            ],
-            [
-                "天使",
-                "angel"
-            ],
-            [
-                "魔鬼",
-                "devil"
-            ],
-            [
-                "迷你女孩",
-                "minigirl"
-            ],
-            [
-                "非人",
-                "no_humans"
-            ],
-            [
-                "雌小鬼",
-                "mesugaki"
-            ],
-            [
-                "怪物",
-                "monster"
-            ],
-            [
-                "老人",
-                "elder"
-            ],
-            [
-                "富豪",
-                "rich man"
-            ],
-            [
-                "乞丐",
-                "beggar"
-            ],
-            [
-                "巨人",
-                "titans"
-            ],
-            [
-                "侏儒",
-                "dwarf"
-            ],
-            [
-                "小丑",
-                "clown"
-            ],
-            [
-                "奴隶",
-                "slave"
-            ],
-            [
-                "雪女",
-                "yukiwo"
-            ],
-            [
-                "酋长",
-                "sheik"
-            ],
-            [
-                "女王",
-                "queen"
-            ],
-            [
-                "女神",
-                "goddess"
-            ],
-            [
-                "公主",
-                "princess"
-            ],
-            [
-                "王子",
-                "prince"
-            ],
-            [
-                "新娘",
-                "bride"
-            ],
-            [
-                "新郎",
-                "bridegroom"
-            ],
-            [
-                "肌肉男",
-                "muscle man"
-            ],
-            [
-                "偶像",
-                "idol"
-            ],
-            [
-                "兔女郎",
-                "bunny girl"
-            ],
-            [
-                "怪物女孩",
-                "monster girl"
-            ],
-            [
-                "狐狸女孩",
-                "fox girl"
-            ],
-            [
-                "狼女孩",
-                "wolf girl"
-            ],
-            [
-                "猫女孩",
-                "cat girl"
-            ],
-            [
-                "木偶",
-                "marionette"
-            ],
-            [
-                "黏土手办",
-                "nendoroid"
-            ]
-        ],
-        "数量": [
-            [
-                "单人",
-                "solo"
-            ],
-            [
-                "多个女孩",
-                "multiple girls"
-            ],
-            [
-                "双胞胎",
-                "twins"
-            ],
-            [
-                "三胞胎",
-                "triplets"
-            ],
-            [
-                "兄弟姐妹",
-                "brother and sister"
-            ]
-        ]
-    },
-    "角色": {
-        "职业": [
-            [
-                "救生员",
-                "lifeguard"
-            ],
-            [
-                "拳击手",
-                "boxer"
-            ],
-            [
-                "科学家",
-                "scientist"
-            ],
-            [
-                "运动员",
-                "athletes"
-            ],
-            [
-                "职场女性",
-                "office lady"
-            ],
-            [
-                "和尚",
-                "monk"
-            ],
-            [
-                "杂技演员",
-                "crobat"
-            ],
-            [
-                "修女",
-                "nun"
-            ],
-            [
-                "护士",
-                "nurse"
-            ],
-            [
-                "空姐",
-                "stewardess"
-            ],
-            [
-                "学生",
-                "student"
-            ],
-            [
-                "女服务员",
-                "waitress"
-            ],
-            [
-                "老师",
-                "teacher"
-            ],
-            [
-                "赛车手",
-                "racer"
-            ],
-            [
-                "警察",
-                "police"
-            ],
-            [
-                "士兵",
-                "soldier"
-            ],
-            [
-                "啦啦队",
-                "cheerleader"
-            ],
-            [
-                "男演员",
-                "actor"
-            ],
-            [
-                "女演员",
-                "actress"
-            ],
-            [
-                "间谍",
-                "spy"
-            ],
-            [
-                "特工",
-                "agent"
-            ],
-            [
-                "刺客",
-                "assassin"
-            ],
-            [
-                "诗人",
-                "poet"
-            ],
-            [
-                "日本武士",
-                "samurai"
-            ],
-            [
-                "舞女",
-                "dancing girl"
-            ],
-            [
-                "摩托车手",
-                "motorcyclist"
-            ],
-            [
-                "黑客",
-                "hacker"
-            ],
-            [
-                "魔术师",
-                "magician"
-            ],
-            [
-                "侦探",
-                "detective"
-            ],
-            [
-                "人偶",
-                "doll"
-            ],
-            [
-                "女仆",
-                "maid"
-            ],
-            [
-                "飞行员",
-                "pilot"
-            ],
-            [
-                "潜水员",
-                "diver"
-            ],
-            [
-                "酒吧审查员",
-                "bar censor"
-            ],
-            [
-                "传教士",
-                "missionary"
-            ],
-            [
-                "消防员",
-                "firefighter"
-            ],
-            [
-                "守门员",
-                "goalkeeper"
-            ],
-            [
-                "厨师",
-                "chef"
-            ],
-            [
-                "宇航员",
-                "astronaut"
-            ],
-            [
-                "收银员",
-                "cashier"
-            ],
-            [
-                "邮递员",
-                "mailman"
-            ],
-            [
-                "咖啡师",
-                "barista"
-            ],
-            [
-                "隐士",
-                "the hermit"
-            ],
-            [
-                "牧羊人",
-                "makihitsuji"
-            ]
-        ],
-        "动漫": [
-            [
-                "宝可梦",
-                "pokemon"
-            ],
-            [
-                "泰迪熊",
-                "teddy bear"
-            ],
-            [
-                "马里奥",
-                "mario"
-            ],
-            [
-                "皮卡丘",
-                "pikachu"
-            ],
-            [
-                "新世纪福音战士",
-                "neon genesis evangelion"
-            ],
-            [
-                "初音未来",
-                "hatsune miku"
-            ],
-            [
-                "哈利波特",
-                "harry potter"
-            ],
-            [
-                "哆啦A梦",
-                "doraemon"
-            ],
-            [
-                "圣斗士星矢",
-                "saint seiya"
-            ],
-            [
-                "五条悟",
-                "gojou satoru"
-            ],
-            [
-                "复仇者联盟",
-                "avengers"
-            ],
-            [
-                "神奇女侠",
-                "mazinger"
-            ],
-            [
-                "美国队长",
-                "captain america"
-            ],
-            [
-                "蜡笔小新",
-                "crayon shin-chan"
-            ],
-            [
-                "灌篮高手",
-                "slam dunk"
-            ],
-            [
-                "孙悟空",
-                "sun wukong"
-            ],
-            [
-                "女巫",
-                "witch"
-            ],
-            [
-                "忍者",
-                "ninja"
-            ],
-            [
-                "吸血鬼",
-                "vampire"
-            ],
-            [
-                "骑士",
-                "knight"
-            ],
-            [
-                "魔法少女",
-                "magical_girl"
-            ],
-            [
-                "半兽人",
-                "orc"
-            ],
-            [
-                "德鲁伊",
-                "druid"
-            ],
-            [
-                "妖精",
-                "elf"
-            ],
-            [
-                "小精灵",
-                "fairy"
-            ],
-            [
-                "兽人",
-                "furry"
-            ],
-            [
-                "美人鱼",
-                "mermaid"
-            ],
-            [
-                "假面骑士",
-                "kamen rider"
-            ],
-            [
-                "魔导师",
-                "magister"
-            ],
-            [
-                "蜘蛛侠",
-                "spider-man"
-            ],
-            [
-                "圣诞老人",
-                "santa alter"
-            ]
-        ]
-    },
-    "五官": {
-        "眉毛": [
-            [
-                "浓眉",
-                "thick eyebrows"
-            ],
-            [
-                "眉毛翘起",
-                "cocked eyebrow"
-            ],
-            [
-                "短眉毛",
-                "short eyebrows"
-            ],
-            [
-                "V字眉",
-                "v-shaped eyebrows"
-            ]
-        ],
-        "眼睛": [
-            [
-                "空洞眼睛",
-                "empty eyes"
-            ],
-            [
-                "睁大眼睛",
-                "wide eyes"
-            ],
-            [
-                "闭上一只眼",
-                "one eye closed"
-            ],
-            [
-                "半闭眼睛",
-                "half-closed eyes"
-            ],
-            [
-                "渐变眼",
-                "gradient_eyes"
-            ],
-            [
-                "水汪汪大眼",
-                "aqua eyes"
-            ],
-            [
-                "翻白眼",
-                "rolling eyes"
-            ],
-            [
-                "斗鸡眼",
-                "s-eyed"
-            ],
-            [
-                "猫眼",
-                "slit pupils"
-            ],
-            [
-                "布满血丝的眼睛",
-                "bloodshot eyes"
-            ],
-            [
-                "发光眼睛",
-                "glowing eyes"
-            ],
-            [
-                "吊眼角",
-                "tsurime"
-            ],
-            [
-                "垂眼角",
-                "tareme"
-            ],
-            [
-                "恶魔眼",
-                "devil eyes"
-            ],
-            [
-                "收缩的瞳孔",
-                "constricted pupils"
-            ],
-            [
-                "魔瞳",
-                "devil pupils"
-            ],
-            [
-                "蛇瞳",
-                "snake pupils"
-            ],
-            [
-                "闪闪发光瞳",
-                "pupils sparkling"
-            ],
-            [
-                "花形瞳",
-                "flower-shaped pupils"
-            ],
-            [
-                "爱心瞳",
-                "heart-shaped pupils"
-            ],
-            [
-                "异色瞳",
-                "heterochromia"
-            ],
-            [
-                "美瞳",
-                "color contact lenses"
-            ],
-            [
-                "长睫毛",
-                "longeyelashes"
-            ],
-            [
-                "彩色睫毛",
-                "colored eyelashes"
-            ],
-            [
-                "眼下痣",
-                "mole under eye"
-            ]
-        ],
-        "嘴巴": [
-            [
-                "栗子嘴",
-                "chestnut mouth"
-            ],
-            [
-                "厚嘴唇",
-                "thick lips"
-            ],
-            [
-                "嘴唇浮肿",
-                "puffy lips"
-            ],
-            [
-                "口红",
-                "lipstick"
-            ],
-            [
-                "心形嘴",
-                "heart-shaped mouth"
-            ],
-            [
-                "嘟嘴",
-                "pout"
-            ],
-            [
-                "张嘴",
-                "open mouth"
-            ],
-            [
-                "闭嘴",
-                "closed mouth"
-            ],
-            [
-                "猫咪嘴",
-                "：3"
-            ],
-            [
-                "鲨鱼嘴",
-                "shark mouth"
-            ],
-            [
-                "吐舌头",
-                ":p"
-            ],
-            [
-                "分开嘴唇",
-                "parted lips"
-            ],
-            [
-                "嘴下痣",
-                "mole under mouth"
-            ]
-        ],
-        "耳朵": [
-            [
-                "动物耳朵",
-                "fake animal ears"
-            ],
-            [
-                "猫耳朵",
-                "cat ears"
-            ],
-            [
-                "狗耳朵",
-                "dog ears"
-            ],
-            [
-                "狐狸耳朵",
-                "fox ears"
-            ],
-            [
-                "兔子耳朵",
-                "bunny ears"
-            ],
-            [
-                "熊耳朵",
-                "bear ears"
-            ]
-        ],
-        "胡子和牙": [
-            [
-                "胡须",
-                "beard"
-            ],
-            [
-                "小胡子",
-                "mustache"
-            ],
-            [
-                "山羊胡",
-                "goatee"
-            ],
-            [
-                "长鬓角",
-                "long sideburns"
-            ],
-            [
-                "尖牙",
-                "fangs"
-            ],
-            [
-                "虎牙",
-                "canine teeth"
-            ],
-            [
-                "咬紧牙关",
-                "clenched teeth"
-            ]
-        ]
-    },
-    "表情": {
-        "表情": [
-            [
-                "无表情",
-                "expressionless"
-            ],
-            [
-                "脸色苍白",
-                "turn pale"
-            ],
-            [
-                "2D脸红",
-                "blush stickers"
-            ],
-            [
-                "脸红",
-                "blush"
-            ],
-            [
-                "两眼发直",
-                "blank stare"
-            ],
-            [
-                "青筋凸起",
-                "anger vein"
-            ],
-            [
-                "尴尬",
-                "embarrassed"
-            ],
-            [
-                "傲慢",
-                "hubrael"
-            ],
-            [
-                "郁闷",
-                "depressed"
-            ],
-            [
-                "畏缩",
-                "wince"
-            ],
-            [
-                "烦恼",
-                "kilesha"
-            ],
-            [
-                "阴暗脸",
-                "shaded face"
-            ],
-            [
-                "疼痛",
-                "pain"
-            ],
-            [
-                "尖叫",
-                "screaming"
-            ],
-            [
-                "叹息",
-                "sigh"
-            ],
-            [
-                "紧张",
-                "nervous"
-            ],
-            [
-                "困惑",
-                "confused"
-            ],
-            [
-                "害怕",
-                "scared"
-            ],
-            [
-                "喝醉",
-                "drunk"
-            ],
-            [
-                "哭",
-                "tears"
-            ],
-            [
-                "悲伤",
-                "sad"
-            ],
-            [
-                "生气",
-                "angry"
-            ],
-            [
-                "害羞",
-                "nose blush"
-            ],
-            [
-                "严肃",
-                "serious"
-            ],
-            [
-                "鄙夷",
-                "jitome"
-            ],
-            [
-                "疯狂",
-                "crazy"
-            ],
-            [
-                "黑化",
-                "dark_persona"
-            ],
-            [
-                "得意",
-                "smug"
-            ],
-            [
-                "思考中",
-                "thinking"
-            ],
-            [
-                "扬眉",
-                "raised eyebrow"
-            ],
-            [
-                "轻皱眉",
-                "light frown"
-            ],
-            [
-                "皱眉",
-                "frown"
-            ],
-            [
-                "调皮脸",
-                "naughty face"
-            ],
-            [
-                "做鬼脸",
-                "eyeid pull"
-            ],
-            [
-                "流鼻血",
-                "nosebleed"
-            ],
-            [
-                "困",
-                "sleepy"
-            ],
-            [
-                "眯眼",
-                "zzz"
-            ],
-            [
-                "流口水",
-                "drooling"
-            ]
-        ],
-        "笑容": [
-            [
-                "微笑",
-                "light smile"
-            ],
-            [
-                "假笑",
-                "false smile"
-            ],
-            [
-                "挑逗笑容",
-                "seductive smile"
-            ],
-            [
-                "疯狂笑容",
-                "crazy smile"
-            ],
-            [
-                "邪恶笑容",
-                "evil smile"
-            ],
-            [
-                "单侧嘴角上扬",
-                "smirk"
-            ],
-            [
-                "诱人笑容",
-                "seductive smile"
-            ],
-            [
-                "露齿笑",
-                "grin"
-            ],
-            [
-                "大笑",
-                "laughing"
-            ],
-            [
-                "杯型笑脸",
-                ":d"
-            ]
-        ]
-    },
-    "头发": {
-        "长度": [
-            [
-                "短发",
-                "short hair"
-            ],
-            [
-                "中发",
-                "medium hair"
-            ],
-            [
-                "长发",
-                "long hair"
-            ],
-            [
-                "头发过肩",
-                "hair over shoulder"
-            ]
-        ],
-        "颜色": [
-            [
-                "白发",
-                "white hair"
-            ],
-            [
-                "金发",
-                "blonde hair"
-            ],
-            [
-                "银发",
-                "silver hair"
-            ],
-            [
-                "灰发",
-                "grey hair"
-            ],
-            [
-                "棕发",
-                "brown hair"
-            ],
-            [
-                "黑发",
-                "black hair"
-            ],
-            [
-                "紫发",
-                "purple hair"
-            ],
-            [
-                "红发",
-                "red hair"
-            ],
-            [
-                "蓝发",
-                "blue hair"
-            ],
-            [
-                "绿发",
-                "green hair"
-            ],
-            [
-                "粉发",
-                "pink hair"
-            ],
-            [
-                "橙发",
-                "orange hair"
-            ],
-            [
-                "挑染",
-                "streaked hair"
-            ],
-            [
-                "彩发",
-                "multicolored hair"
-            ],
-            [
-                "彩虹发",
-                "rainbow-like hair"
-            ]
-        ],
-        "刘海": [
-            [
-                "刘海",
-                "bangs"
-            ],
-            [
-                "交叉刘海",
-                "crossed bang"
-            ],
-            [
-                "眉间刘海",
-                "hair between eye"
-            ],
-            [
-                "齐刘海",
-                "blunt bangs"
-            ],
-            [
-                "斜刘海",
-                "diagonal bangs"
-            ],
-            [
-                "不对称刘海",
-                "asymmetrical bangs"
-            ],
-            [
-                "编织刘海",
-                "braided bangs"
-            ]
-        ],
-        "辫子": [
-            [
-                "短马尾",
-                "short ponytail"
-            ],
-            [
-                "侧马尾辫",
-                "side ponytail"
-            ],
-            [
-                "前马尾辫",
-                "front ponytail"
-            ],
-            [
-                "分裂马尾辫",
-                "split ponytail"
-            ],
-            [
-                "低马尾辩",
-                "low twintails"
-            ],
-            [
-                "短马尾辫",
-                "short twintails"
-            ],
-            [
-                "侧边辫子",
-                "side braid"
-            ],
-            [
-                "辫子",
-                "braid"
-            ],
-            [
-                "双辫子",
-                "twin braids"
-            ],
-            [
-                "马尾辫",
-                "ponytail"
-            ],
-            [
-                "编织马尾",
-                "braided ponytail"
-            ],
-            [
-                "法式辫",
-                "french braid"
-            ],
-            [
-                "麻花辫",
-                "twists"
-            ],
-            [
-                "高马尾",
-                "high ponytail"
-            ]
-        ],
-        "发型": [
-            [
-                "扎头发",
-                "tied hair"
-            ],
-            [
-                "单侧发髻",
-                "single side bun"
-            ],
-            [
-                "卷发",
-                "curly hair"
-            ],
-            [
-                "直发",
-                "straight hair"
-            ],
-            [
-                "波浪头",
-                "wavy hair"
-            ],
-            [
-                "波波头",
-                "bob hair"
-            ],
-            [
-                "侧分",
-                "slicked-back"
-            ],
-            [
-                "雷鬼头",
-                "Reggae hair"
-            ],
-            [
-                "蓬巴杜发型",
-                "pompadour"
-            ],
-            [
-                "莫西干头",
-                "Mohawk"
-            ],
-            [
-                "锅盖头",
-                "bowl cut"
-            ],
-            [
-                "呆毛",
-                "ahoge"
-            ],
-            [
-                "天线呆毛",
-                "antenna hair"
-            ],
-            [
-                "心形呆毛",
-                "heart ahoge"
-            ],
-            [
-                "公主卷",
-                "drill hair"
-            ],
-            [
-                "翼状发",
-                "hair wings"
-            ],
-            [
-                "蓬发",
-                "disheveled hair"
-            ],
-            [
-                "凌乱发",
-                "messy hair"
-            ],
-            [
-                "露颈盘发",
-                "chignon"
-            ],
-            [
-                "编织发髻",
-                "braided bun"
-            ],
-            [
-                "公主切",
-                "hime_cut"
-            ],
-            [
-                "妹妹切",
-                "bob cut"
-            ],
-            [
-                "刺猬头",
-                "spiked hair"
-            ],
-            [
-                "盘发",
-                "updo"
-            ],
-            [
-                "精灵短发",
-                "pixie cut"
-            ],
-            [
-                "长发绺",
-                "dreadlocks"
-            ],
-            [
-                "爆炸头",
-                "afro"
-            ],
-            [
-                "秃头",
-                "bald"
-            ],
-            [
-                "双丸子头",
-                "double bun"
-            ],
-            [
-                "美式寸头",
-                "buzz cut"
-            ],
-            [
-                "大体积蓬松头发",
-                "big hair"
-            ],
-            [
-                "闪亮的头发",
-                "shiny hair"
-            ],
-            [
-                "发光的头发",
-                "glowing hair"
-            ],
-            [
-                "眼睛间的头发",
-                "hair between eyes"
-            ],
-            [
-                "撩到耳后",
-                "hair behind ear"
-            ]
-        ]
-    },
-    "装饰": {
-        "发饰": [
-            [
-                "发带",
-                "hair ribbon"
-            ],
-            [
-                "头巾",
-                "head scarf"
-            ],
-            [
-                "动物头巾",
-                "animal hood"
-            ],
-            [
-                "蝴蝶结发饰",
-                "hair bow"
-            ],
-            [
-                "新月发饰",
-                "crescent hair ornament"
-            ],
-            [
-                "洛丽塔发饰",
-                "lolita hairband"
-            ],
-            [
-                "羽毛发饰",
-                "feather hair ornament"
-            ],
-            [
-                "头花",
-                "hair flower"
-            ],
-            [
-                "发髻",
-                "hair bun"
-            ],
-            [
-                "发夹",
-                "hairclip"
-            ],
-            [
-                "发箍",
-                "hair scrunchie"
-            ],
-            [
-                "发圈",
-                "hair rings"
-            ],
-            [
-                "发饰",
-                "hair ornament"
-            ],
-            [
-                "发棒",
-                "hair stick"
-            ],
-            [
-                "心形发饰",
-                "heart hair ornament"
-            ]
-        ],
-        "首饰": [
-            [
-                "手链",
-                "bracelet"
-            ],
-            [
-                "项圈",
-                "choker"
-            ],
-            [
-                "金属项圈",
-                "metal collar"
-            ],
-            [
-                "戒指",
-                "ring"
-            ],
-            [
-                "腕带",
-                "wristband"
-            ],
-            [
-                "吊坠",
-                "pendant"
-            ],
-            [
-                "胸针",
-                "brooch"
-            ],
-            [
-                "圈形耳环",
-                "hoop earrings"
-            ],
-            [
-                "手镯",
-                "bangle"
-            ],
-            [
-                "耳钉",
-                "stud earrings"
-            ],
-            [
-                "旭日形首饰",
-                "sunburst"
-            ],
-            [
-                "珍珠手链",
-                "pearl bracelet"
-            ],
-            [
-                "耳坠",
-                "drop earrings"
-            ],
-            [
-                "木偶戒指",
-                "puppet rings"
-            ],
-            [
-                "胸花",
-                "corsage"
-            ],
-            [
-                "蓝宝石胸针",
-                "sapphire brooch"
-            ],
-            [
-                "珠宝首饰",
-                "jewelry"
-            ],
-            [
-                "项链",
-                "necklace"
-            ]
-        ],
-        "装饰": [
-            [
-                "丝带",
-                "ribbon"
-            ],
-            [
-                "丝带饰边",
-                "ribbon trim"
-            ],
-            [
-                "蕾丝饰边",
-                "lace trim"
-            ],
-            [
-                "裙撑",
-                "skirt lift"
-            ],
-            [
-                "护手",
-                "gauntlets"
-            ],
-            [
-                "领巾",
-                "neckerchief"
-            ],
-            [
-                "红领巾",
-                "red neckerchief"
-            ],
-            [
-                "肩章",
-                "pauldrons"
-            ],
-            [
-                "臂带",
-                "arm strap"
-            ],
-            [
-                "臂镯",
-                "armlet"
-            ],
-            [
-                "细肩带",
-                "spaghetti strap"
-            ],
-            [
-                "般若面具",
-                "Prajna in mask"
-            ],
-            [
-                "面纱",
-                "veil"
-            ],
-            [
-                "新娘面纱",
-                "bridal veil"
-            ],
-            [
-                "皇冠",
-                "tiara"
-            ],
-            [
-                "迷你皇冠",
-                "mini crown"
-            ],
-            [
-                "耳罩",
-                "ear covers"
-            ],
-            [
-                "飞行员太阳镜",
-                "aviator sunglasses"
-            ],
-            [
-                "无边框眼镜",
-                "semi-rimless eyewear"
-            ],
-            [
-                "半无框眼镜",
-                "semi-rimless eyewear"
-            ],
-            [
-                "太阳镜",
-                "sunglasses"
-            ],
-            [
-                "风镜",
-                "goggles"
-            ],
-            [
-                "独眼眼罩",
-                "eyepatch"
-            ],
-            [
-                "黑色眼罩",
-                "black blindfold"
-            ],
-            [
-                "铁棘",
-                "metal thorns"
-            ],
-            [
-                "光环",
-                "halo"
-            ],
-            [
-                "口罩",
-                "mouth mask"
-            ],
-            [
-                "创口贴",
-                "bandaid hair ornament"
-            ],
-            [
-                "指甲油",
-                "nail polish"
-            ],
-            [
-                "玩偶关节",
-                "doll joints"
-            ],
-            [
-                "机械义肢",
-                "cybernetic prosthesis"
-            ],
-            [
-                "机械腿",
-                "mechanical legs"
-            ],
-            [
-                "沙滩巾",
-                "beach towel"
-            ],
-            [
-                "雨披",
-                "poncho"
-            ],
-            [
-                "浓妆",
-                "make up"
-            ]
-        ]
-    },
-    "服装": {
-        "上装": [
-            [
-                "过手袖",
-                "sleeves_past_fingers"
-            ],
-            [
-                "背心",
-                "tank top"
-            ],
-            [
-                "白衬衫",
-                "white shirt"
-            ],
-            [
-                "水手衬衫",
-                "sailor shirt"
-            ],
-            [
-                "T恤",
-                "T-shirt"
-            ],
-            [
-                "毛衣",
-                "sweater"
-            ],
-            [
-                "夏日长裙",
-                "summer dress"
-            ],
-            [
-                "连帽衫",
-                "hoodie"
-            ],
-            [
-                "毛领",
-                "fur trimmed colla"
-            ],
-            [
-                "兜帽斗篷",
-                "hooded cloak"
-            ],
-            [
-                "夹克",
-                "jacket"
-            ],
-            [
-                "皮夹克",
-                "leather jacket"
-            ],
-            [
-                "探险家夹克",
-                "safari jacket"
-            ],
-            [
-                "兜帽",
-                "hood"
-            ],
-            [
-                "牛仔夹克",
-                "denim jacket"
-            ],
-            [
-                "高领夹克",
-                "turtleneck jacket"
-            ],
-            [
-                "消防员夹克",
-                "firefighter jacket"
-            ],
-            [
-                "透明夹克",
-                "see-through jacket"
-            ],
-            [
-                "战壕大衣",
-                "trench coat"
-            ],
-            [
-                "实验室外套",
-                "lab coat"
-            ],
-            [
-                "羽绒服",
-                "Down Jackets"
-            ],
-            [
-                "防弹盔甲",
-                "body armor"
-            ],
-            [
-                "防弹衣",
-                "flak jacket"
-            ],
-            [
-                "大衣",
-                "overcoat"
-            ],
-            [
-                "粗呢大衣",
-                "duffel coat"
-            ]
-        ],
-        "服装": [
-            [
-                "透视装",
-                "transparent clothes"
-            ],
-            [
-                "燕尾服",
-                "tailcoat"
-            ],
-            [
-                "女仆装",
-                "Victoria black maid dress"
-            ],
-            [
-                "水手服",
-                "sailor suit"
-            ],
-            [
-                "学生服",
-                "school uniform"
-            ],
-            [
-                "职场制服",
-                "bussiness suit"
-            ],
-            [
-                "西装",
-                "suit"
-            ],
-            [
-                "军装",
-                "military uniform"
-            ],
-            [
-                "礼服",
-                "lucency full dress"
-            ],
-            [
-                "汉服",
-                "hanfu"
-            ],
-            [
-                "旗袍",
-                "cheongsam"
-            ],
-            [
-                "和服",
-                "japanses clothes"
-            ],
-            [
-                "运动服",
-                "sportswear"
-            ],
-            [
-                "工装服",
-                "dungarees"
-            ],
-            [
-                "婚纱",
-                "wedding dress"
-            ],
-            [
-                "银色连衣裙",
-                "silvercleavage dress"
-            ],
-            [
-                "长袍",
-                "robe"
-            ],
-            [
-                "围裙",
-                "apron"
-            ],
-            [
-                "快餐制服",
-                "fast food uniform"
-            ],
-            [
-                "JK制服",
-                "JK"
-            ],
-            [
-                "健身服",
-                "gym_uniform"
-            ],
-            [
-                "巫女服",
-                "miko attire"
-            ],
-            [
-                "海军陆战队服",
-                "SWAT uniform"
-            ],
-            [
-                "无袖连衣裙",
-                "sleeveless dress"
-            ],
-            [
-                "雨衣",
-                "raincoat"
-            ],
-            [
-                "机甲衣",
-                "mech suit"
-            ],
-            [
-                "巫师法袍",
-                "wizard robe"
-            ],
-            [
-                "刺客装束",
-                "assassin-style"
-            ]
-        ],
-        "下装": [
-            [
-                "牛仔短裤",
-                "denim shorts"
-            ],
-            [
-                "百褶裙",
-                "pleated skirt"
-            ],
-            [
-                "热裤",
-                "short shorts"
-            ],
-            [
-                "铅笔裙",
-                "pencil skirt"
-            ],
-            [
-                "皮裙",
-                "leather skirt"
-            ],
-            [
-                "黑色紧身裤",
-                "black leggings"
-            ],
-            [
-                "和服下的裙子",
-                "skirt under kimono"
-            ]
-        ],
-        "其他服装": [
-            [
-                "褶边",
-                "frills"
-            ],
-            [
-                "花边",
-                "lace"
-            ],
-            [
-                "哥特风格",
-                "gothic"
-            ],
-            [
-                "洛丽塔风格",
-                "lolita fashion"
-            ],
-            [
-                "西部风格",
-                "western"
-            ],
-            [
-                "湿身",
-                "wet clothes"
-            ],
-            [
-                "露单肩",
-                "off_shoulder"
-            ],
-            [
-                "露双肩",
-                "bare_shoulders"
-            ],
-            [
-                "格子花纹",
-                "tartan"
-            ],
-            [
-                "横条花纹",
-                "striped"
-            ],
-            [
-                "披甲",
-                "armored skirt"
-            ],
-            [
-                "盔甲",
-                "armor"
-            ],
-            [
-                "金属盔甲",
-                "metal armor"
-            ],
-            [
-                "狂战士铠甲",
-                "berserker armor"
-            ],
-            [
-                "腰带",
-                "belt"
-            ],
-            [
-                "围巾",
-                "scarf"
-            ],
-            [
-                "披肩",
-                "cape"
-            ],
-            [
-                "皮草披肩",
-                "fur shawl"
-            ]
-        ],
-        "帽饰": [
-            [
-                "棒球帽",
-                "Baseball cap"
-            ],
-            [
-                "针织帽",
-                "Beanie"
-            ],
-            [
-                "拿破仑帽",
-                "Bicorne"
-            ],
-            [
-                "太阳帽",
-                "Boater hat"
-            ],
-            [
-                "遮阳帽",
-                "Visor cap"
-            ],
-            [
-                "圆顶礼帽",
-                "Bowler hat"
-            ],
-            [
-                "报童帽",
-                "Cabbie hat"
-            ],
-            [
-                "渔夫帽",
-                "Bucket hat"
-            ],
-            [
-                "侦探帽",
-                "Fedora"
-            ],
-            [
-                "牛仔帽",
-                "Cowboy hat"
-            ],
-            [
-                "厨师帽",
-                "Chef hat"
-            ],
-            [
-                "军官帽",
-                "Military hat"
-            ],
-            [
-                "圣诞帽",
-                "Santa hat"
-            ],
-            [
-                "派对帽",
-                "Party hat"
-            ],
-            [
-                "小丑帽",
-                "Jester cap"
-            ],
-            [
-                "安全帽",
-                "Hardhat"
-            ],
-            [
-                "棒球头盔",
-                "Baseball helmet"
-            ],
-            [
-                "橄榄球头盔",
-                "Football helmet"
-            ],
-            [
-                "动物头盔",
-                "animal helmet"
-            ],
-            [
-                "女巫帽",
-                "witch hat"
-            ],
-            [
-                "贝雷帽",
-                "beret"
-            ],
-            [
-                "鸭舌帽",
-                "peaked cap"
-            ],
-            [
-                "草帽",
-                "Straw hat"
-            ]
-        ]
-    },
-    "鞋饰": {
-        "鞋类": [
-            [
-                "裸足",
-                "bare_legs"
-            ],
-            [
-                "靴子",
-                "boots"
-            ],
-            [
-                "马丁靴",
-                "knee boots"
-            ],
-            [
-                "脚踝靴",
-                "ankle boots"
-            ],
-            [
-                "系带靴",
-                "cross-laced_footwear"
-            ],
-            [
-                "战斗靴",
-                "combat boots"
-            ],
-            [
-                "装甲靴",
-                "armored boots"
-            ],
-            [
-                "过膝靴",
-                "knee boots"
-            ],
-            [
-                "防水橡胶靴",
-                "rubber boots"
-            ],
-            [
-                "皮靴",
-                "leather boots"
-            ],
-            [
-                "雪地靴",
-                "snow boots"
-            ],
-            [
-                "圣诞靴",
-                "santa boots"
-            ],
-            [
-                "鞋子",
-                "shoes"
-            ],
-            [
-                "厚底鞋",
-                "platform footwear"
-            ],
-            [
-                "尖头鞋",
-                "pointy footwear"
-            ],
-            [
-                "芭蕾舞鞋",
-                "ballet slippers"
-            ],
-            [
-                "运动鞋",
-                "sneakers"
-            ],
-            [
-                "旱冰鞋",
-                "roller skates"
-            ],
-            [
-                "溜冰鞋",
-                "ice skates"
-            ],
-            [
-                "钉鞋",
-                "spiked shoes"
-            ],
-            [
-                "高跟鞋",
-                "high heels"
-            ],
-            [
-                "玛丽珍鞋",
-                "mary janes"
-            ],
-            [
-                "乐福鞋",
-                "loafers"
-            ],
-            [
-                "女式学生鞋",
-                "uwabaki"
-            ],
-            [
-                "凉鞋",
-                "sandals"
-            ],
-            [
-                "木屐",
-                "geta"
-            ],
-            [
-                "拖鞋",
-                "slippers"
-            ],
-            [
-                "人字拖",
-                "flip-flops"
-            ]
-        ],
-        "袜类": [
-            [
-                "不穿袜子",
-                "no socks"
-            ],
-            [
-                "短袜",
-                "socks"
-            ],
-            [
-                "日式厚底短袜",
-                "tabi"
-            ],
-            [
-                "丝袜",
-                "stockings"
-            ],
-            [
-                "圣诞袜",
-                "christmas stocking"
-            ],
-            [
-                "暖腿袜",
-                "leg warmers"
-            ],
-            [
-                "荷叶边袜子",
-                "frilled socks"
-            ],
-            [
-                "丝带边袜子",
-                "ribbon-trimmed legwear"
-            ],
-            [
-                "闪亮袜子",
-                "shiny legwear"
-            ],
-            [
-                "褶边长筒袜",
-                "frilled thighhighs"
-            ],
-            [
-                "过膝袜",
-                "thighhighs"
-            ],
-            [
-                "渔网袜",
-                "fishnet stockings"
-            ],
-            [
-                "堆堆袜",
-                "loose socks"
-            ],
-            [
-                "裤袜",
-                "leggings"
-            ],
-            [
-                "蕾丝裤袜",
-                "lace legwear"
-            ],
-            [
-                "罗纹裤袜",
-                "ribbed legwear"
-            ],
-            [
-                "湿连裤袜",
-                "wet pantyhose"
-            ],
-            [
-                "格子裤袜",
-                "plaid legwear"
-            ],
-            [
-                "透视裤袜",
-                "see-through legwear"
-            ],
-            [
-                "连裤袜",
-                "pantyhose"
-            ],
-            [
-                "撕裂的连裤袜",
-                "torn pantyhose"
-            ],
-            [
-                "单腿连裤袜",
-                "single leg pantyhose"
-            ],
-            [
-                "荷叶边连裤袜",
-                "frilled pantyhose"
-            ],
-            [
-                "柳丁吊袜带",
-                "studded garter belt"
-            ],
-            [
-                "吊袜带",
-                "sock dangle"
-            ],
-            [
-                "大腿系带",
-                "thigh strap"
-            ],
-            [
-                "腿部花边环",
-                "leg_garter"
-            ],
-            [
-                "包扎腿",
-                "bandaged leg"
-            ]
-        ]
-    },
-    "尾巴翅膀和角": {
-        "尾巴": [
-            [
-                "宝可梦尾巴",
-                "pokemon tail"
-            ],
-            [
-                "皮卡丘尾巴",
-                "pikachu tail"
-            ],
-            [
-                "水獭尾巴",
-                "otter tail"
-            ],
-            [
-                "蝎尾",
-                "scorpion tail"
-            ],
-            [
-                "鹿尾",
-                "deer tail"
-            ],
-            [
-                "黄鼠狼尾巴",
-                "weasel tail"
-            ],
-            [
-                "羊驼尾巴",
-                "alpaca tail"
-            ],
-            [
-                "恐龙尾巴",
-                "dinosaur tail"
-            ],
-            [
-                "企鹅尾巴",
-                "penguin tail"
-            ],
-            [
-                "羊尾巴",
-                "sheep tail"
-            ],
-            [
-                "山羊尾巴",
-                "goat tail"
-            ],
-            [
-                "海狸尾巴",
-                "beaver tail"
-            ],
-            [
-                "小熊猫尾巴",
-                "red panda tail"
-            ],
-            [
-                "豺尾巴",
-                "jackal tail"
-            ],
-            [
-                "食蚁兽尾巴",
-                "anteater tail"
-            ],
-            [
-                "土狼尾巴",
-                "aardwolf tail"
-            ],
-            [
-                "猎豹尾巴",
-                "panther tail"
-            ],
-            [
-                "熊猫尾巴",
-                "panda tail"
-            ],
-            [
-                "天使尾巴",
-                "Angel wings"
-            ]
-        ],
-        "翅膀": [
-            [
-                "蝴蝶翅膀",
-                "Butterfly wings"
-            ],
-            [
-                "昆虫翅膀",
-                "insect wings"
-            ],
-            [
-                "蝙蝠翅膀",
-                "Bat wings"
-            ],
-            [
-                "鸟翼",
-                "bird wings"
-            ],
-            [
-                "羽翼",
-                "feathered wings"
-            ],
-            [
-                "妖精翅膀",
-                "Fairy wings"
-            ],
-            [
-                "龙之翼",
-                "Dragon wings"
-            ],
-            [
-                "恶魔之翼",
-                "Demon wings"
-            ],
-            [
-                "火焰翅膀",
-                "Fiery wings"
-            ],
-            [
-                "机械翅膀",
-                "Mechanical wings"
-            ],
-            [
-                "冰翅",
-                "ice crystal texture"
-            ],
-            [
-                "冰火之翼",
-                "((burning feathers)),(feathers_made_of_ice),(frozen feathers),(((ice and fire together)))"
-            ]
-        ],
-        "角": [
-            [
-                "羚羊角",
-                "antelope horns"
-            ],
-            [
-                "山羊角",
-                "goat horns"
-            ],
-            [
-                "羊角",
-                "sheep horns"
-            ],
-            [
-                "奶牛角",
-                "cow horns"
-            ],
-            [
-                "公牛角",
-                "ox horns"
-            ],
-            [
-                "鬼角",
-                "oni horns"
-            ],
-            [
-                "断角",
-                "broken horn"
-            ],
-            [
-                "机械角",
-                "mechanical horns"
-            ],
-            [
-                "恶魔之角",
-                "demon horns"
-            ],
-            [
-                "龙之角",
-                "dragon horns"
-            ]
-        ]
-    },
-    "姿势": {
-        "姿态": [
-            [
-                "侧身坐",
-                "yokozuwari"
-            ],
-            [
-                "鸭子坐",
-                "ahirusuwari"
-            ],
-            [
-                "盘腿",
-                "indian style"
-            ],
-            [
-                "跪着",
-                "kneeling"
-            ],
-            [
-                "躬躯",
-                "arched back"
-            ],
-            [
-                "膝枕",
-                "lap pillow"
-            ],
-            [
-                "学猫叫",
-                "paw pose"
-            ],
-            [
-                "单膝跪地",
-                "one knee"
-            ],
-            [
-                "蜷起身子侧躺",
-                "fetal position"
-            ],
-            [
-                "仰卧",
-                "on back"
-            ],
-            [
-                "俯卧",
-                "on stomach"
-            ],
-            [
-                "坐着",
-                "sitting"
-            ],
-            [
-                "屈膝抱腿坐",
-                "hugging own legs"
-            ],
-            [
-                "立式跨骑",
-                "upright straddle"
-            ],
-            [
-                "站着",
-                "standing"
-            ],
-            [
-                "蹲着",
-                "squatting"
-            ],
-            [
-                "绑在十字架上",
-                "crucifixion"
-            ],
-            [
-                "双腿缠绕",
-                "leg lock"
-            ],
-            [
-                "四肢着地",
-                "all fours"
-            ],
-            [
-                "戴耳机",
-                "hand on headphones"
-            ],
-            [
-                "鬼姿势",
-                "ghost pose"
-            ],
-            [
-                "回头",
-                "turning around"
-            ],
-            [
-                "歪头",
-                "head tilt"
-            ],
-            [
-                "前倾",
-                "leaning forward"
-            ]
-        ],
-        "手势": [
-            [
-                "嘘手势",
-                "shushing"
-            ],
-            [
-                "翘大拇指",
-                "thumbs up"
-            ],
-            [
-                "手放脑后",
-                "arms behind head"
-            ],
-            [
-                "手放身后",
-                "arms behind back"
-            ],
-            [
-                "手插口袋",
-                "hand in pocket"
-            ],
-            [
-                "双手插口袋",
-                "hands in pocket"
-            ],
-            [
-                "十指相扣",
-                "interlocked fingers"
-            ],
-            [
-                "V字手势",
-                "victory pose"
-            ],
-            [
-                "手在地板上",
-                "hand on floor"
-            ],
-            [
-                "手在额头上",
-                "hand on forehead"
-            ],
-            [
-                "手在肚子上",
-                "hand on own stomach"
-            ],
-            [
-                "手在肩膀上",
-                "arm over shoulder"
-            ],
-            [
-                "手搭别人的腿",
-                "hand on another's leg"
-            ],
-            [
-                "手搭别人的腰",
-                "hand on another's waist"
-            ],
-            [
-                "双手合十",
-                "own hands clasped"
-            ],
-            [
-                "翼展双臂",
-                "wide open arms"
-            ],
-            [
-                "手放嘴边",
-                "hand to mouth"
-            ],
-            [
-                "手枪手势",
-                "finger gun"
-            ],
-            [
-                "猫爪手势",
-                "cat pose"
-            ]
-        ],
-        "视线": [
-            [
-                "远眺",
-                "looking afar"
-            ],
-            [
-                "照镜子",
-                "looking at mirror"
-            ],
-            [
-                "看手机",
-                "looking at phone"
-            ],
-            [
-                "看向别处",
-                "looking away"
-            ],
-            [
-                "透过刘海看",
-                "visible through hair"
-            ],
-            [
-                "透过眼镜看",
-                "looking over glasses"
-            ],
-            [
-                "面向观者",
-                "look at viewer"
-            ],
-            [
-                "靠近观者",
-                "close to viewer"
-            ],
-            [
-                "动态角度",
-                "dynamic angle"
-            ],
-            [
-                "舞台角度",
-                "dramatic angle"
-            ],
-            [
-                "凝视",
-                "stare"
-            ],
-            [
-                "向上看",
-                "looking up"
-            ],
-            [
-                "向下看",
-                "looking down"
-            ],
-            [
-                "看向旁边",
-                "looking to the side"
-            ],
-            [
-                "移开目光",
-                "looking away"
-            ]
-        ]
-    },
-    "动作": {
-        "整体": [
-            [
-                "嗅闻",
-                "smelling"
-            ],
-            [
-                "公主抱",
-                "princess carry"
-            ],
-            [
-                "拥抱",
-                "hug"
-            ],
-            [
-                "背对背",
-                "back-to-back"
-            ],
-            [
-                "耶",
-                "peace symbol"
-            ],
-            [
-                "调整过膝袜",
-                "adjusting_thighhigh"
-            ],
-            [
-                "抓住",
-                "grabbing"
-            ],
-            [
-                "战斗姿态",
-                "fighting_stance"
-            ],
-            [
-                "走",
-                "walking"
-            ],
-            [
-                "跑",
-                "running"
-            ],
-            [
-                "跨坐",
-                "straddling"
-            ],
-            [
-                "跳",
-                "jump"
-            ],
-            [
-                "飞",
-                "fly"
-            ],
-            [
-                "靠墙",
-                "against wall"
-            ],
-            [
-                "躺",
-                "lie"
-            ],
-            [
-                "从背后抱",
-                "hug from behind"
-            ],
-            [
-                "遛狗",
-                "walk a dog"
-            ],
-            [
-                "提裙",
-                "skirt lift"
-            ],
-            [
-                "泡温泉",
-                "half body under water"
-            ],
-            [
-                "骑马",
-                "horse riding"
-            ],
-            [
-                "自拍",
-                "selfie"
-            ],
-            [
-                "一字马",
-                "standing split"
-            ],
-            [
-                "敬礼",
-                "salute"
-            ],
-            [
-                "祈祷",
-                "pray"
-            ],
-            [
-                "冥想",
-                "doing a meditation"
-            ]
-        ],
-        "上半身": [
-            [
-                "伸懒腰",
-                "stretch"
-            ],
-            [
-                "托腮",
-                "gill support"
-            ],
-            [
-                "牵手",
-                "holding hands"
-            ],
-            [
-                "单手叉腰",
-                "hand_on_hip"
-            ],
-            [
-                "双手叉腰",
-                "hands_on_hips"
-            ],
-            [
-                "招手",
-                "ving"
-            ],
-            [
-                "撮头发",
-                "hair scrunchie"
-            ],
-            [
-                "拉头发",
-                "hair_pull"
-            ],
-            [
-                "抓别人的头发",
-                "grabbing another's hair"
-            ],
-            [
-                "竖中指",
-                "middle_finger"
-            ],
-            [
-                "弯腰",
-                "bent over"
-            ],
-            [
-                "亲吻脸颊",
-                "kissing cheek"
-            ],
-            [
-                "亲吻额头",
-                "kissing forehead"
-            ],
-            [
-                "踮起脚尖吻",
-                "tiptoe kiss"
-            ],
-            [
-                "头顶水果",
-                "fruit on head"
-            ],
-            [
-                "咬手套",
-                "glove biting"
-            ],
-            [
-                "脸贴脸",
-                "cheek-to-cheek"
-            ],
-            [
-                "手牵手",
-                "hand on another's hand"
-            ],
-            [
-                "双手交叉",
-                "crossed arms"
-            ],
-            [
-                "双手张开伸直",
-                "spread arms"
-            ],
-            [
-                "挥动手臂",
-                "waving arms"
-            ],
-            [
-                "伸出手臂",
-                "outstretched arm"
-            ],
-            [
-                "用手臂支撑",
-                "carrying"
-            ],
-            [
-                "搂着手臂",
-                "arm hug"
-            ],
-            [
-                "拿着",
-                "holding"
-            ],
-            [
-                "拿着餐刀",
-                "holding knife"
-            ],
-            [
-                "拿着枪",
-                "holding gun"
-            ],
-            [
-                "拿着杯子",
-                "holding cup"
-            ],
-            [
-                "拿着食物",
-                "holding food"
-            ],
-            [
-                "拿着书",
-                "holding book"
-            ],
-            [
-                "拿着魔杖",
-                "holding wand"
-            ],
-            [
-                "打着伞",
-                "holding umbrella"
-            ],
-            [
-                "捧着花",
-                "holding flower"
-            ],
-            [
-                "拿着麦克风",
-                "holding microphone"
-            ],
-            [
-                "抱着物品",
-                "object hug"
-            ],
-            [
-                "抱着心",
-                "holding heart"
-            ]
-        ]
-    },
-    "环境": {
-        "四季朝暮": [
-            [
-                "春天",
-                "in spring"
-            ],
-            [
-                "夏天",
-                "in summer"
-            ],
-            [
-                "秋天",
-                "in autumn"
-            ],
-            [
-                "冬天",
-                "in winter"
-            ],
-            [
-                "黄昏",
-                "dusk"
-            ],
-            [
-                "夜晚",
-                "night"
-            ],
-            [
-                "秋景",
-                "(autumn maple forest:1.3),(very few fallen leaves),(path)"
-            ]
-        ],
-        "日月星辰": [
-            [
-                "太阳",
-                "sun"
-            ],
-            [
-                "落日",
-                "sunset"
-            ],
-            [
-                "月亮",
-                "moon"
-            ],
-            [
-                "满月",
-                "full_moon"
-            ],
-            [
-                "星星",
-                "stars"
-            ],
-            [
-                "天空",
-                "sky"
-            ],
-            [
-                "多云",
-                "cloudy"
-            ],
-            [
-                "雨天",
-                "rain"
-            ],
-            [
-                "冰雪",
-                "snow,ice"
-            ],
-            [
-                "雪花",
-                "snowflakes"
-            ],
-            [
-                "闪电",
-                "lighting"
-            ],
-            [
-                "彩虹",
-                "rainbow"
-            ],
-            [
-                "流星雨",
-                "meteor shower"
-            ],
-            [
-                "宇宙",
-                "universe"
-            ]
-        ],
-        "天涯海角": [
-            [
-                "大海",
-                "sea"
-            ],
-            [
-                "山丘",
-                "hills"
-            ],
-            [
-                "草地",
-                "in a meadow"
-            ],
-            [
-                "海滩",
-                "on the beach"
-            ],
-            [
-                "水中",
-                "underwater"
-            ],
-            [
-                "海边",
-                "over the sea"
-            ],
-            [
-                "树林",
-                "grove"
-            ],
-            [
-                "沙漠",
-                "on a desert"
-            ],
-            [
-                "高原",
-                "plateau"
-            ],
-            [
-                "悬崖",
-                "cliff"
-            ],
-            [
-                "峡谷",
-                "canyon"
-            ],
-            [
-                "绿洲",
-                "oasis"
-            ],
-            [
-                "竹林",
-                "bamboo forest"
-            ],
-            [
-                "冰川",
-                "glacier"
-            ],
-            [
-                "浮岛",
-                "floating island"
-            ],
-            [
-                "火山",
-                "volcano"
-            ],
-            [
-                "大草原",
-                "savanna"
-            ],
-            [
-                "瀑布",
-                "waterfall"
-            ],
-            [
-                "溪流",
-                "stream"
-            ],
-            [
-                "荒地",
-                "wasteland"
-            ],
-            [
-                "稻田",
-                "rice paddy"
-            ],
-            [
-                "麦田",
-                "wheat field"
-            ],
-            [
-                "花田",
-                "flower field"
-            ],
-            [
-                "花海",
-                "flower sea"
-            ]
-        ],
-        "室内场景": [
-            [
-                "室内",
-                "indoor"
-            ],
-            [
-                "窗帘",
-                "curtain"
-            ],
-            [
-                "床",
-                "bed"
-            ],
-            [
-                "浴室",
-                "bathroom"
-            ],
-            [
-                "厕所隔间",
-                "toilet stall"
-            ],
-            [
-                "宅男房间",
-                "otaku room"
-            ],
-            [
-                "自助餐厅",
-                "cafeteria"
-            ],
-            [
-                "教室",
-                "classroom"
-            ],
-            [
-                "俱乐部",
-                "clubroom"
-            ],
-            [
-                "沙龙",
-                "salon"
-            ],
-            [
-                "酒吧",
-                "bar"
-            ],
-            [
-                "居酒屋",
-                "izakaya"
-            ],
-            [
-                "咖啡馆",
-                "cafe"
-            ],
-            [
-                "面包店",
-                "bakery"
-            ],
-            [
-                "便利店",
-                "convenience store"
-            ],
-            [
-                "超市",
-                "supermarket"
-            ],
-            [
-                "书店",
-                "bookstore"
-            ],
-            [
-                "药店",
-                "pharmacy"
-            ],
-            [
-                "剧院",
-                "theater"
-            ],
-            [
-                "电影院",
-                "movie theater"
-            ],
-            [
-                "温室",
-                "greenhouse"
-            ],
-            [
-                "地库",
-                "dungeon"
-            ],
-            [
-                "健身房",
-                "gym"
-            ],
-            [
-                "医务室",
-                "infirmary"
-            ],
-            [
-                "实验室",
-                "laboratory"
-            ],
-            [
-                "图书馆",
-                "library"
-            ],
-            [
-                "工作坊",
-                "workshop"
-            ],
-            [
-                "舞台",
-                "stage"
-            ],
-            [
-                "法庭",
-                "courtroom"
-            ]
-        ],
-        "城市建筑": [
-            [
-                "城堡",
-                "castle"
-            ],
-            [
-                "城市",
-                "city"
-            ],
-            [
-                "水上乐园",
-                "waterpark"
-            ],
-            [
-                "旋转木马",
-                "carousel"
-            ],
-            [
-                "摩天轮",
-                "ferris wheel"
-            ],
-            [
-                "水族馆",
-                "aquarium"
-            ],
-            [
-                "动物园",
-                "zoo"
-            ],
-            [
-                "保龄球馆",
-                "bowling alley"
-            ],
-            [
-                "美术馆",
-                "art gallery"
-            ],
-            [
-                "博物馆",
-                "museum"
-            ],
-            [
-                "天文馆",
-                "planetarium"
-            ],
-            [
-                "游泳池",
-                "swimming pool"
-            ],
-            [
-                "体育场",
-                "stadium"
-            ],
-            [
-                "寺庙",
-                "temple"
-            ],
-            [
-                "巴士车站",
-                "bus stop"
-            ],
-            [
-                "火车站",
-                "train station"
-            ],
-            [
-                "喷泉",
-                "fountain"
-            ],
-            [
-                "游乐场",
-                "playground"
-            ],
-            [
-                "市场摊位",
-                "market stall"
-            ],
-            [
-                "电话亭",
-                "phone booth"
-            ],
-            [
-                "铁轨",
-                "railroad tracks"
-            ],
-            [
-                "机场",
-                "airport"
-            ],
-            [
-                "隧道",
-                "tunnel"
-            ]
-        ],
-        "背景氛围": [
-            [
-                "新年",
-                "new year"
-            ],
-            [
-                "兔年",
-                "year of the rabbit"
-            ],
-            [
-                "情人节",
-                "valentine"
-            ],
-            [
-                "元宵节",
-                "lantern festival"
-            ],
-            [
-                "夏日祭",
-                "summer festival"
-            ],
-            [
-                "七夕节",
-                "tanabata"
-            ],
-            [
-                "中秋节",
-                "mid-autumn festival"
-            ],
-            [
-                "万圣节",
-                "halloween"
-            ],
-            [
-                "圣诞节",
-                "christmas"
-            ],
-            [
-                "爆炸",
-                "explosion"
-            ],
-            [
-                "蒸汽",
-                "water vapor"
-            ],
-            [
-                "焰火",
-                "fireworks"
-            ],
-            [
-                "落地窗",
-                "ceiling window"
-            ],
-            [
-                "彩色玻璃",
-                "colourful glass"
-            ],
-            [
-                "染色玻璃",
-                "stain glass"
-            ],
-            [
-                "涂鸦墙",
-                "Graffiti wall"
-            ],
-            [
-                "马赛克背景",
-                "mosaic background"
-            ],
-            [
-                "液体背景",
-                "liquid background, Sputte..."
-            ],
-            [
-                "魔法环",
-                "magic circles"
-            ],
-            [
-                "荧光蘑菇森林",
-                "fluorescent mushroom fore..."
-            ],
-            [
-                "彩色泡泡",
-                "(((colorful bubble)))"
-            ]
-        ]
-    },
-    "风格": {
-        "艺术风格": [
-            [
-                "8bit游戏",
-                "8 Bit Game"
-            ],
-            [
-                "80年代动画",
-                "1980s anime"
-            ],
-            [
-                "迪士尼电影",
-                "disney movie"
-            ],
-            [
-                "哥特摇滚",
-                "goth"
-            ],
-            [
-                "80年代电影",
-                "80s movie"
-            ],
-            [
-                "泡泡龙",
-                "bubble bobble"
-            ],
-            [
-                "皮克斯动画",
-                "style of Pixar"
-            ],
-            [
-                "宝丽来艺术",
-                "Polaroid art"
-            ],
-            [
-                "万花筒摄影",
-                "Kaleidoscope Photography"
-            ],
-            [
-                "欧泊渲染",
-                "opal render"
-            ],
-            [
-                "色谱图",
-                "chemigram"
-            ],
-            [
-                "吉卜力风格",
-                "Studio Ghibli"
-            ],
-            [
-                "梦幻",
-                "dreamlike"
-            ],
-            [
-                "签绘风格",
-                "(faux traditional media)"
-            ],
-            [
-                "原神冲击",
-                "genshin impact"
-            ],
-            [
-                "碧蓝航线",
-                "azur lane"
-            ],
-            [
-                "舰队收藏",
-                "kantai collection"
-            ],
-            [
-                "边缘行者",
-                "rebecca (cyberpunk)"
-            ],
-            [
-                "电锯人",
-                "chainsaw man"
-            ],
-            [
-                "魔法旋涡",
-                "Magic Vortex"
-            ],
-            [
-                "柴油朋克",
-                "((dieselpunk))"
-            ],
-            [
-                "四格",
-                "4koma"
-            ],
-            [
-                "杂志扫描",
-                "magazine scan"
-            ],
-            [
-                "专辑封面",
-                "album cover"
-            ],
-            [
-                "线条变粗",
-                "(lineart)"
-            ],
-            [
-                "蒸汽波",
-                "synthwave"
-            ],
-            [
-                "洛可可",
-                "(illustration),(paper figure),(lococo),((impasto)),(shiny skin)"
-            ]
-        ],
-        "艺术类型": [
-            [
-                "单色图片",
-                "monochrome"
-            ],
-            [
-                "拼贴艺术",
-                "Collage"
-            ],
-            [
-                "彩色玻璃工艺",
-                "Dalle de verre"
-            ],
-            [
-                "像素画",
-                "pixel art"
-            ],
-            [
-                "瓷画",
-                "Encaustic painting"
-            ],
-            [
-                "水墨画",
-                "Ink wash painting"
-            ],
-            [
-                "铜版雕刻",
-                "Mezzotint"
-            ],
-            [
-                "剪影",
-                "silhouette"
-            ],
-            [
-                "插画",
-                "illustration"
-            ],
-            [
-                "水彩画",
-                "(((ink))), ((watercolor))"
-            ],
-            [
-                "浮世绘",
-                "illustration,(((ukiyoe))),((sketch)),((japanese_art))"
-            ],
-            [
-                "中国风",
-                "((wash painting)),((ink splashing)),((color splashing)),((((dyeing)))),((chinese style))"
-            ],
-            [
-                "油画",
-                "((dyeing)),((oil painting)),((impasto))"
-            ],
-            [
-                "黑白草图",
-                "(posing sketch), (monochrome)"
-            ],
-            [
-                "手画草稿",
-                "sketch"
-            ],
-            [
-                "铅笔速写",
-                "(monochrome), (gray scale), (pencil sketch lines)"
-            ],
-            [
-                "彩铅画",
-                "(watercolor pencil)"
-            ]
-        ],
-        "艺术派系": [
-            [
-                "新艺术主义",
-                "((art nouveau))"
-            ],
-            [
-                "古典主义",
-                "((classicism))"
-            ],
-            [
-                "未来主义",
-                "((futurism))"
-            ],
-            [
-                "达达主义",
-                "((Dadaism))"
-            ],
-            [
-                "抽象艺术",
-                "((abstract art))"
-            ],
-            [
-                "ASCII艺术",
-                "((ASCII art))"
-            ]
-        ],
-        "艺术家风格": [
-            [
-                "穆夏风格",
-                "((alphonse mucha))"
-            ],
-            [
-                "莫奈风格",
-                "((Monet style))"
-            ]
-        ],
-        "光照": [
-            [
-                "轮廓光",
-                "rim light"
-            ],
-            [
-                "体积光",
-                "Volumetric Lighting"
-            ],
-            [
-                "霓虹灯",
-                "glowing neon lights"
-            ],
-            [
-                "电影级光照",
-                "Cinematic Lighting"
-            ],
-            [
-                "透镜光晕",
-                "lens flare"
-            ],
-            [
-                "金属光泽",
-                "metallic luster"
-            ],
-            [
-                "氛围光照",
-                "moody lighting"
-            ],
-            [
-                "丁达尔效应",
-                "Tyndall effect"
-            ],
-            [
-                "漏光光效",
-                "light leaks"
-            ],
-            [
-                "背景光",
-                "background light"
-            ],
-            [
-                "自然光",
-                "available light"
-            ]
-        ]
-    },
-    "R18": {
-        "R18 Tags Normal": [
-            [
-                "触手",
-                "tentacle"
-            ],
-            [
-                "发交",
-                "hairjob"
-            ],
-            [
-                "口交",
-                "oral/fellatio"
-            ],
-            [
-                "深喉",
-                "deepthroat"
-            ],
-            [
-                "吃精",
-                "gokkun"
-            ],
-            [
-                "口塞",
-                "gag"
-            ],
-            [
-                "球塞",
-                "ballgag"
-            ],
-            [
-                "棍塞",
-                "bitgag"
-            ],
-            [
-                "扩口器",
-                "ring_gag"
-            ],
-            [
-                "用布勒住嘴",
-                "cleave_gag"
-            ],
-            [
-                "用内裤塞口",
-                "panty_gag"
-            ],
-            [
-                "胶带封口",
-                "tapegag"
-            ],
-            [
-                "颜射",
-                "facial"
-            ],
-            [
-                "宠物链",
-                "leash"
-            ],
-            [
-                "用手做",
-                "handjob"
-            ],
-            [
-                "摸索",
-                "groping"
-            ],
-            [
-                "乳晕",
-                "areolae"
-            ],
-            [
-                "乳头",
-                "nipples"
-            ],
-            [
-                "大乳头",
-                "puffy_nipples"
-            ],
-            [
-                "小乳头",
-                "small_nipples"
-            ],
-            [
-                "啦乳头",
-                "nipple_pull"
-            ],
-            [
-                "虐乳头",
-                "nipple_torture"
-            ],
-            [
-                "捏乳头",
-                "nipple_tweak"
-            ],
-            [
-                "乳头穿孔",
-                "nipple_piercing"
-            ],
-            [
-                "摸乳",
-                "breast_grab"
-            ],
-            [
-                "哺乳",
-                "lactation"
-            ],
-            [
-                "乳交",
-                "paizuri"
-            ],
-            [
-                "多P乳交",
-                "multiple_paizuri"
-            ],
-            [
-                "把头塞入胸",
-                "breast_smother"
-            ],
-            [
-                "穿孔",
-                "piercing"
-            ],
-            [
-                "肚脐穿孔",
-                "navel_piercing"
-            ],
-            [
-                "腿交",
-                "thigh_sex"
-            ],
-            [
-                "足交",
-                "footjob"
-            ],
-            [
-                "腹部三角带",
-                "mound_of_venus"
-            ],
-            [
-                "宽盆骨",
-                "wide_hips"
-            ],
-            [
-                "自慰",
-                "masturbation"
-            ],
-            [
-                "隔着衣服自慰",
-                "clothed_masturbation"
-            ],
-            [
-                "阳具/屌",
-                "penis"
-            ],
-            [
-                "睾丸/蛋蛋",
-                "testicles"
-            ],
-            [
-                "射出",
-                "ejaculation"
-            ],
-            [
-                "射精",
-                "cum"
-            ],
-            [
-                "内射",
-                "cum_inside"
-            ],
-            [
-                "射在胸上",
-                "cum_on_breast"
-            ],
-            [
-                "射在头发上",
-                "cum_on_hair"
-            ],
-            [
-                "射在食物上",
-                "cum_on_food"
-            ],
-            [
-                "蛋疼",
-                "tamakeri"
-            ],
-            [
-                "阴户",
-                "pussy/vaginal"
-            ],
-            [
-                "阴毛",
-                "pubic_hair"
-            ],
-            [
-                "剃过阴毛的",
-                "shaved_pussy"
-            ],
-            [
-                "没逼的",
-                "no_pussy"
-            ],
-            [
-                "阴蒂",
-                "clitoris"
-            ],
-            [
-                "肥逼",
-                "fat_mons"
-            ],
-            [
-                "骆驼脚趾逼",
-                "cameltoe"
-            ],
-            [
-                "爱液",
-                "pussy_juice"
-            ],
-            [
-                "巨大插入",
-                "large_insertion"
-            ],
-            [
-                "拳头插入",
-                "fisting"
-            ],
-            [
-                "菊花插入物",
-                "anal_insertion"
-            ],
-            [
-                "手插入",
-                "fingering"
-            ],
-            [
-                "插入物",
-                "insertion"
-            ],
-            [
-                "潮吹",
-                "female_ejaculation"
-            ],
-            [
-                "性器摩擦",
-                "grinding"
-            ],
-            [
-                "用水果蔬菜",
-                "fruit_insertion"
-            ],
-            [
-                "胯部摩擦",
-                "crotch_rub"
-            ],
-            [
-                "坐在脸上",
-                "facesitting"
-            ],
-            [
-                "子宫口",
-                "cervix"
-            ],
-            [
-                "舔阴",
-                "cunnilingus"
-            ],
-            [
-                "一穴多插",
-                "multiple_insertions"
-            ],
-            [
-                "双穴同插",
-                "double_penetration"
-            ],
-            [
-                "三穴同插",
-                "triple_penetration"
-            ],
-            [
-                "双重入穴",
-                "double_vaginal"
-            ],
-            [
-                "尿尿",
-                "peeing"
-            ],
-            [
-                "憋尿",
-                "have_to_pee"
-            ],
-            [
-                "屁股",
-                "ass"
-            ],
-            [
-                "大屁股",
-                "huge_ass"
-            ],
-            [
-                "用手张开屁股",
-                "spread_ass"
-            ],
-            [
-                "臀交",
-                "buttjob"
-            ],
-            [
-                "打屁股",
-                "spanked"
-            ],
-            [
-                "菊花",
-                "anus"
-            ],
-            [
-                "爆菊",
-                "anal"
-            ],
-            [
-                "双重爆菊",
-                "double_anal"
-            ],
-            [
-                "手爆菊",
-                "anal_fingering"
-            ],
-            [
-                "拳爆菊",
-                "anal_fisting"
-            ],
-            [
-                "肛吻",
-                "anilingus"
-            ],
-            [
-                "灌肠",
-                "enema"
-            ],
-            [
-                "肚子胀",
-                "stomach_bulge"
-            ],
-            [
-                "透视人体内部",
-                "x-ray/cross-section/internal_cumshot"
-            ],
-            [
-                "酒倒在阴部",
-                "wakamezake"
-            ],
-            [
-                "公共场所",
-                "public"
-            ],
-            [
-                "羞耻play",
-                "humiliation"
-            ],
-            [
-                "胸罩拉到胸上方",
-                "bra_lift"
-            ],
-            [
-                "内裤挂在一条腿上",
-                "panties_around_one_leg"
-            ],
-            [
-                "被发现",
-                "caught"
-            ],
-            [
-                "进门被发现",
-                "walk"
-            ],
-            [
-                "身上有字",
-                "body_writing"
-            ],
-            [
-                "在身上计数",
-                "tally"
-            ]
-        ],
-        "More": [
-            [
-                "双性",
-                "futanari"
-            ],
-            [
-                "乱伦",
-                "incest"
-            ],
-            [
-                "兄弟/姐妹/姐弟/兄妹",
-                "twincest"
-            ],
-            [
-                "女性使用假屌",
-                "pegging"
-            ],
-            [
-                "女奸男",
-                "femdom"
-            ],
-            [
-                "日本黑妹",
-                "ganguro"
-            ],
-            [
-                "人兽",
-                "bestiality"
-            ],
-            [
-                "轮奸",
-                "gangbang"
-            ],
-            [
-                "3P",
-                "threesome"
-            ],
-            [
-                "群P",
-                "group_sex/orgy/teamwork"
-            ],
-            [
-                "磨豆腐",
-                "tribadism"
-            ],
-            [
-                "性骚扰",
-                "molestation"
-            ],
-            [
-                "窥阴癖",
-                "voyeurism"
-            ],
-            [
-                "裸露癖",
-                "exhibitionism"
-            ],
-            [
-                "强暴",
-                "rape"
-            ],
-            [
-                "将要被强暴",
-                "about_to_be_raped"
-            ],
-            [
-                "性爱",
-                "sex"
-            ],
-            [
-                "穿着衣服做爱",
-                "clothed_sex"
-            ],
-            [
-                "快乐做爱",
-                "happy_sex"
-            ],
-            [
-                "水中做爱",
-                "underwater_sex"
-            ],
-            [
-                "前后夹攻",
-                "spitroast"
-            ],
-            [
-                "插在过膝袜里",
-                "cock_in_thighhigh"
-            ]
-        ],
-        "体位": [
-            [
-                "69式",
-                "69"
-            ],
-            [
-                "狗爬式",
-                "doggystyle"
-            ],
-            [
-                "跨坐式",
-                "leg_lock/upright_straddle"
-            ],
-            [
-                "传教士体位",
-                "missionary"
-            ],
-            [
-                "女上体位",
-                "girl_on_top"
-            ],
-            [
-                "女上正骑",
-                "cowgirl_position"
-            ],
-            [
-                "女上反骑",
-                "reverse_cowgirl"
-            ],
-            [
-                "处女",
-                "virgin"
-            ]
-        ],
-        "SM": [
-            [
-                "奴隶",
-                "slave"
-            ],
-            [
-                "捆绑",
-                "shibari"
-            ],
-            [
-                "捆绑/奴役",
-                "bondage"
-            ],
-            [
-                "绑缚与调教/支配与臣服/施虐与受虐",
-                "bdsm"
-            ],
-            [
-                "枷锁",
-                "pillory/stocks"
-            ],
-            [
-                "绳子",
-                "rope"
-            ],
-            [
-                "手臂捆绑",
-                "bound_arms"
-            ],
-            [
-                "手腕捆绑",
-                "bound_wrists"
-            ],
-            [
-                "胯下捆绑",
-                "crotch_rope"
-            ],
-            [
-                "曲膝捆绑",
-                "hogtie"
-            ],
-            [
-                "青蛙捆绑",
-                "frogtie"
-            ],
-            [
-                "悬空捆绑",
-                "suspension"
-            ],
-            [
-                "分腿捆绑",
-                "spreader_bar"
-            ]
-        ],
-        "道具": [
-            [
-                "木马",
-                "wooden_horse"
-            ],
-            [
-                "肛珠",
-                "anal_beads"
-            ],
-            [
-                "假屌",
-                "dildo"
-            ],
-            [
-                "屌环",
-                "cock_ring"
-            ],
-            [
-                "跳蛋",
-                "egg_vibrator"
-            ],
-            [
-                "人工阴道",
-                "artificial_vagina"
-            ],
-            [
-                "按摩棒",
-                "hitachi_magic_wand"
-            ],
-            [
-                "人造阴茎",
-                "dildo"
-            ],
-            [
-                "双头龙",
-                "double_dildo"
-            ],
-            [
-                "跳蛋",
-                "vibrator"
-            ],
-            [
-                "跳蛋遥控在过膝袜里",
-                "vibrator_in_thighhighs"
-            ]
-        ],
-        "R18G": [
-            [
-                "女体盛",
-                "nyotaimori"
-            ],
-            [
-                "吃人",
-                "vore"
-            ],
-            [
-                "截肢",
-                "amputee"
-            ],
-            [
-                "肉体变形",
-                "transformation"
-            ],
-            [
-                "思想操控",
-                "mind_control"
-            ],
-            [
-                "审核过的/有码",
-                "censored"
-            ],
-            [
-                "未审核的/无码",
-                "uncensored"
-            ],
-            [
-                "亚洲",
-                "asian"
-            ],
-            [
-                "无脸男",
-                "faceless_male"
-            ],
-            [
-                "血",
-                "blood"
-            ]
-        ]
-    }
+  "常用": {
+    "图像优化": [
+      ["大师作品", "masterpiece"],
+      ["最好画质", "best quality"],
+      ["更高质量", "official art"],
+      ["高细节", "highly detailed"],
+      ["超高分辨率", "absurdres"],
+      ["8k分辨率", "8k resolution"]
+    ],
+    "镜头视角": [
+      ["景深", "Depth of field"],
+      ["全景", "Panorama"],
+      ["长焦镜头", "telephoto lens"],
+      ["微距镜头", "macro lens"],
+      ["全身镜头", "full body"],
+      ["中景镜头", "medium shot"],
+      ["七分身镜头", "cowboy shot"],
+      ["半身像", "(profile picture)"],
+      ["写实肖像", "close up portrait"],
+      ["第一人称视角", "POV"],
+      ["鱼眼镜头", "fisheye"],
+      ["部分水下拍摄", "partially underwater shot"]
+    ],
+    "其他常用": [
+      ["精致五官", "exquisite facial features"],
+      ["完美的脸", "prefect face"],
+      ["发光皮肤", "shiny skin"],
+      ["抽象背景", "abstract background"],
+      ["蒸汽朋克", "steampunk"],
+      ["赛博朋克", "cyberpunk"]
+    ],
+    "预设": [
+      [
+        "胡桃★~",
+        "hu tao (genshin impact),upper body,long brown hair,long twintails,red eyes,hair flower,jacket,black cap,beautiful eyes"
+      ]
+    ]
+  },
+  "人物": {
+    "人物": [
+      ["女性", "female"],
+      ["男性", "male"],
+      ["女孩", "girl"],
+      ["男孩", "boy"],
+      ["正太", "shota"],
+      ["萝莉", "loli"],
+      ["美少女", "bishoujo"],
+      ["美少男", "bishounen"],
+      ["辣妹", "gyaru"],
+      ["大小姐", "ojousama"],
+      ["Q版人物", "chibi"],
+      ["胖子", "fat man"],
+      ["伪娘", "crossdressing"],
+      ["天使", "angel"],
+      ["魔鬼", "devil"],
+      ["迷你女孩", "minigirl"],
+      ["非人", "no_humans"],
+      ["雌小鬼", "mesugaki"],
+      ["怪物", "monster"],
+      ["老人", "elder"],
+      ["富豪", "rich man"],
+      ["乞丐", "beggar"],
+      ["巨人", "titans"],
+      ["侏儒", "dwarf"],
+      ["小丑", "clown"],
+      ["奴隶", "slave"],
+      ["雪女", "yukiwo"],
+      ["酋长", "sheik"],
+      ["女王", "queen"],
+      ["女神", "goddess"],
+      ["公主", "princess"],
+      ["王子", "prince"],
+      ["新娘", "bride"],
+      ["新郎", "bridegroom"],
+      ["肌肉男", "muscle man"],
+      ["偶像", "idol"],
+      ["兔女郎", "bunny girl"],
+      ["怪物女孩", "monster girl"],
+      ["狐狸女孩", "fox girl"],
+      ["狼女孩", "wolf girl"],
+      ["猫女孩", "cat girl"],
+      ["木偶", "marionette"],
+      ["黏土手办", "nendoroid"]
+    ],
+    "数量": [
+      ["单人", "solo"],
+      ["多个女孩", "multiple girls"],
+      ["双胞胎", "twins"],
+      ["三胞胎", "triplets"],
+      ["兄弟姐妹", "brother and sister"]
+    ]
+  },
+  "角色": {
+    "职业": [
+      ["救生员", "lifeguard"],
+      ["拳击手", "boxer"],
+      ["科学家", "scientist"],
+      ["运动员", "athletes"],
+      ["职场女性", "office lady"],
+      ["和尚", "monk"],
+      ["杂技演员", "crobat"],
+      ["修女", "nun"],
+      ["护士", "nurse"],
+      ["空姐", "stewardess"],
+      ["学生", "student"],
+      ["女服务员", "waitress"],
+      ["老师", "teacher"],
+      ["赛车手", "racer"],
+      ["警察", "police"],
+      ["士兵", "soldier"],
+      ["啦啦队", "cheerleader"],
+      ["男演员", "actor"],
+      ["女演员", "actress"],
+      ["间谍", "spy"],
+      ["特工", "agent"],
+      ["刺客", "assassin"],
+      ["诗人", "poet"],
+      ["日本武士", "samurai"],
+      ["舞女", "dancing girl"],
+      ["摩托车手", "motorcyclist"],
+      ["黑客", "hacker"],
+      ["魔术师", "magician"],
+      ["侦探", "detective"],
+      ["人偶", "doll"],
+      ["女仆", "maid"],
+      ["飞行员", "pilot"],
+      ["潜水员", "diver"],
+      ["酒吧审查员", "bar censor"],
+      ["传教士", "missionary"],
+      ["消防员", "firefighter"],
+      ["守门员", "goalkeeper"],
+      ["厨师", "chef"],
+      ["宇航员", "astronaut"],
+      ["收银员", "cashier"],
+      ["邮递员", "mailman"],
+      ["咖啡师", "barista"],
+      ["隐士", "the hermit"],
+      ["牧羊人", "makihitsuji"]
+    ],
+    "动漫": [
+      ["宝可梦", "pokemon"],
+      ["泰迪熊", "teddy bear"],
+      ["马里奥", "mario"],
+      ["皮卡丘", "pikachu"],
+      ["新世纪福音战士", "neon genesis evangelion"],
+      ["初音未来", "hatsune miku"],
+      ["哈利波特", "harry potter"],
+      ["哆啦A梦", "doraemon"],
+      ["圣斗士星矢", "saint seiya"],
+      ["五条悟", "gojou satoru"],
+      ["复仇者联盟", "avengers"],
+      ["神奇女侠", "mazinger"],
+      ["美国队长", "captain america"],
+      ["蜡笔小新", "crayon shin-chan"],
+      ["灌篮高手", "slam dunk"],
+      ["孙悟空", "sun wukong"],
+      ["女巫", "witch"],
+      ["忍者", "ninja"],
+      ["吸血鬼", "vampire"],
+      ["骑士", "knight"],
+      ["魔法少女", "magical_girl"],
+      ["半兽人", "orc"],
+      ["德鲁伊", "druid"],
+      ["妖精", "elf"],
+      ["小精灵", "fairy"],
+      ["兽人", "furry"],
+      ["美人鱼", "mermaid"],
+      ["假面骑士", "kamen rider"],
+      ["魔导师", "magister"],
+      ["蜘蛛侠", "spider-man"],
+      ["圣诞老人", "santa alter"]
+    ]
+  },
+  "五官": {
+    "眉毛": [
+      ["浓眉", "thick eyebrows"],
+      ["眉毛翘起", "cocked eyebrow"],
+      ["短眉毛", "short eyebrows"],
+      ["V字眉", "v-shaped eyebrows"]
+    ],
+    "眼睛": [
+      ["空洞眼睛", "empty eyes"],
+      ["睁大眼睛", "wide eyes"],
+      ["闭上一只眼", "one eye closed"],
+      ["半闭眼睛", "half-closed eyes"],
+      ["渐变眼", "gradient_eyes"],
+      ["水汪汪大眼", "aqua eyes"],
+      ["翻白眼", "rolling eyes"],
+      ["斗鸡眼", "s-eyed"],
+      ["猫眼", "slit pupils"],
+      ["布满血丝的眼睛", "bloodshot eyes"],
+      ["发光眼睛", "glowing eyes"],
+      ["吊眼角", "tsurime"],
+      ["垂眼角", "tareme"],
+      ["恶魔眼", "devil eyes"],
+      ["收缩的瞳孔", "constricted pupils"],
+      ["魔瞳", "devil pupils"],
+      ["蛇瞳", "snake pupils"],
+      ["闪闪发光瞳", "pupils sparkling"],
+      ["花形瞳", "flower-shaped pupils"],
+      ["爱心瞳", "heart-shaped pupils"],
+      ["异色瞳", "heterochromia"],
+      ["美瞳", "color contact lenses"],
+      ["长睫毛", "longeyelashes"],
+      ["彩色睫毛", "colored eyelashes"],
+      ["眼下痣", "mole under eye"]
+    ],
+    "嘴巴": [
+      ["栗子嘴", "chestnut mouth"],
+      ["厚嘴唇", "thick lips"],
+      ["嘴唇浮肿", "puffy lips"],
+      ["口红", "lipstick"],
+      ["心形嘴", "heart-shaped mouth"],
+      ["嘟嘴", "pout"],
+      ["张嘴", "open mouth"],
+      ["闭嘴", "closed mouth"],
+      ["猫咪嘴", "：3"],
+      ["鲨鱼嘴", "shark mouth"],
+      ["吐舌头", ":p"],
+      ["分开嘴唇", "parted lips"],
+      ["嘴下痣", "mole under mouth"]
+    ],
+    "耳朵": [
+      ["动物耳朵", "fake animal ears"],
+      ["猫耳朵", "cat ears"],
+      ["狗耳朵", "dog ears"],
+      ["狐狸耳朵", "fox ears"],
+      ["兔子耳朵", "bunny ears"],
+      ["熊耳朵", "bear ears"]
+    ],
+    "胡子和牙": [
+      ["胡须", "beard"],
+      ["小胡子", "mustache"],
+      ["山羊胡", "goatee"],
+      ["长鬓角", "long sideburns"],
+      ["尖牙", "fangs"],
+      ["虎牙", "canine teeth"],
+      ["咬紧牙关", "clenched teeth"]
+    ]
+  },
+  "表情": {
+    "表情": [
+      ["无表情", "expressionless"],
+      ["脸色苍白", "turn pale"],
+      ["2D脸红", "blush stickers"],
+      ["脸红", "blush"],
+      ["两眼发直", "blank stare"],
+      ["青筋凸起", "anger vein"],
+      ["尴尬", "embarrassed"],
+      ["傲慢", "hubrael"],
+      ["郁闷", "depressed"],
+      ["畏缩", "wince"],
+      ["烦恼", "kilesha"],
+      ["阴暗脸", "shaded face"],
+      ["疼痛", "pain"],
+      ["尖叫", "screaming"],
+      ["叹息", "sigh"],
+      ["紧张", "nervous"],
+      ["困惑", "confused"],
+      ["害怕", "scared"],
+      ["喝醉", "drunk"],
+      ["哭", "tears"],
+      ["悲伤", "sad"],
+      ["生气", "angry"],
+      ["害羞", "nose blush"],
+      ["严肃", "serious"],
+      ["鄙夷", "jitome"],
+      ["疯狂", "crazy"],
+      ["黑化", "dark_persona"],
+      ["得意", "smug"],
+      ["思考中", "thinking"],
+      ["扬眉", "raised eyebrow"],
+      ["轻皱眉", "light frown"],
+      ["皱眉", "frown"],
+      ["调皮脸", "naughty face"],
+      ["做鬼脸", "eyeid pull"],
+      ["流鼻血", "nosebleed"],
+      ["困", "sleepy"],
+      ["眯眼", "zzz"],
+      ["流口水", "drooling"]
+    ],
+    "笑容": [
+      ["微笑", "light smile"],
+      ["假笑", "false smile"],
+      ["挑逗笑容", "seductive smile"],
+      ["疯狂笑容", "crazy smile"],
+      ["邪恶笑容", "evil smile"],
+      ["单侧嘴角上扬", "smirk"],
+      ["诱人笑容", "seductive smile"],
+      ["露齿笑", "grin"],
+      ["大笑", "laughing"],
+      ["杯型笑脸", ":d"]
+    ]
+  },
+  "头发": {
+    "长度": [
+      ["短发", "short hair"],
+      ["中发", "medium hair"],
+      ["长发", "long hair"],
+      ["头发过肩", "hair over shoulder"]
+    ],
+    "颜色": [
+      ["白发", "white hair"],
+      ["金发", "blonde hair"],
+      ["银发", "silver hair"],
+      ["灰发", "grey hair"],
+      ["棕发", "brown hair"],
+      ["黑发", "black hair"],
+      ["紫发", "purple hair"],
+      ["红发", "red hair"],
+      ["蓝发", "blue hair"],
+      ["绿发", "green hair"],
+      ["粉发", "pink hair"],
+      ["橙发", "orange hair"],
+      ["挑染", "streaked hair"],
+      ["彩发", "multicolored hair"],
+      ["彩虹发", "rainbow-like hair"]
+    ],
+    "刘海": [
+      ["刘海", "bangs"],
+      ["交叉刘海", "crossed bang"],
+      ["眉间刘海", "hair between eye"],
+      ["齐刘海", "blunt bangs"],
+      ["斜刘海", "diagonal bangs"],
+      ["不对称刘海", "asymmetrical bangs"],
+      ["编织刘海", "braided bangs"]
+    ],
+    "辫子": [
+      ["短马尾", "short ponytail"],
+      ["侧马尾辫", "side ponytail"],
+      ["前马尾辫", "front ponytail"],
+      ["分裂马尾辫", "split ponytail"],
+      ["低马尾辩", "low twintails"],
+      ["短马尾辫", "short twintails"],
+      ["侧边辫子", "side braid"],
+      ["辫子", "braid"],
+      ["双辫子", "twin braids"],
+      ["马尾辫", "ponytail"],
+      ["编织马尾", "braided ponytail"],
+      ["法式辫", "french braid"],
+      ["麻花辫", "twists"],
+      ["高马尾", "high ponytail"]
+    ],
+    "发型": [
+      ["扎头发", "tied hair"],
+      ["单侧发髻", "single side bun"],
+      ["卷发", "curly hair"],
+      ["直发", "straight hair"],
+      ["波浪头", "wavy hair"],
+      ["波波头", "bob hair"],
+      ["侧分", "slicked-back"],
+      ["雷鬼头", "Reggae hair"],
+      ["蓬巴杜发型", "pompadour"],
+      ["莫西干头", "Mohawk"],
+      ["锅盖头", "bowl cut"],
+      ["呆毛", "ahoge"],
+      ["天线呆毛", "antenna hair"],
+      ["心形呆毛", "heart ahoge"],
+      ["公主卷", "drill hair"],
+      ["翼状发", "hair wings"],
+      ["蓬发", "disheveled hair"],
+      ["凌乱发", "messy hair"],
+      ["露颈盘发", "chignon"],
+      ["编织发髻", "braided bun"],
+      ["公主切", "hime_cut"],
+      ["妹妹切", "bob cut"],
+      ["刺猬头", "spiked hair"],
+      ["盘发", "updo"],
+      ["精灵短发", "pixie cut"],
+      ["长发绺", "dreadlocks"],
+      ["爆炸头", "afro"],
+      ["秃头", "bald"],
+      ["双丸子头", "double bun"],
+      ["美式寸头", "buzz cut"],
+      ["大体积蓬松头发", "big hair"],
+      ["闪亮的头发", "shiny hair"],
+      ["发光的头发", "glowing hair"],
+      ["眼睛间的头发", "hair between eyes"],
+      ["撩到耳后", "hair behind ear"]
+    ]
+  },
+  "装饰": {
+    "发饰": [
+      ["发带", "hair ribbon"],
+      ["头巾", "head scarf"],
+      ["动物头巾", "animal hood"],
+      ["蝴蝶结发饰", "hair bow"],
+      ["新月发饰", "crescent hair ornament"],
+      ["洛丽塔发饰", "lolita hairband"],
+      ["羽毛发饰", "feather hair ornament"],
+      ["头花", "hair flower"],
+      ["发髻", "hair bun"],
+      ["发夹", "hairclip"],
+      ["发箍", "hair scrunchie"],
+      ["发圈", "hair rings"],
+      ["发饰", "hair ornament"],
+      ["发棒", "hair stick"],
+      ["心形发饰", "heart hair ornament"]
+    ],
+    "首饰": [
+      ["手链", "bracelet"],
+      ["项圈", "choker"],
+      ["金属项圈", "metal collar"],
+      ["戒指", "ring"],
+      ["腕带", "wristband"],
+      ["吊坠", "pendant"],
+      ["胸针", "brooch"],
+      ["圈形耳环", "hoop earrings"],
+      ["手镯", "bangle"],
+      ["耳钉", "stud earrings"],
+      ["旭日形首饰", "sunburst"],
+      ["珍珠手链", "pearl bracelet"],
+      ["耳坠", "drop earrings"],
+      ["木偶戒指", "puppet rings"],
+      ["胸花", "corsage"],
+      ["蓝宝石胸针", "sapphire brooch"],
+      ["珠宝首饰", "jewelry"],
+      ["项链", "necklace"]
+    ],
+    "装饰": [
+      ["丝带", "ribbon"],
+      ["丝带饰边", "ribbon trim"],
+      ["蕾丝饰边", "lace trim"],
+      ["裙撑", "skirt lift"],
+      ["护手", "gauntlets"],
+      ["领巾", "neckerchief"],
+      ["红领巾", "red neckerchief"],
+      ["肩章", "pauldrons"],
+      ["臂带", "arm strap"],
+      ["臂镯", "armlet"],
+      ["细肩带", "spaghetti strap"],
+      ["般若面具", "Prajna in mask"],
+      ["面纱", "veil"],
+      ["新娘面纱", "bridal veil"],
+      ["皇冠", "tiara"],
+      ["迷你皇冠", "mini crown"],
+      ["耳罩", "ear covers"],
+      ["飞行员太阳镜", "aviator sunglasses"],
+      ["无边框眼镜", "semi-rimless eyewear"],
+      ["半无框眼镜", "semi-rimless eyewear"],
+      ["太阳镜", "sunglasses"],
+      ["风镜", "goggles"],
+      ["独眼眼罩", "eyepatch"],
+      ["黑色眼罩", "black blindfold"],
+      ["铁棘", "metal thorns"],
+      ["光环", "halo"],
+      ["口罩", "mouth mask"],
+      ["创口贴", "bandaid hair ornament"],
+      ["指甲油", "nail polish"],
+      ["玩偶关节", "doll joints"],
+      ["机械义肢", "cybernetic prosthesis"],
+      ["机械腿", "mechanical legs"],
+      ["沙滩巾", "beach towel"],
+      ["雨披", "poncho"],
+      ["浓妆", "make up"]
+    ]
+  },
+  "服装": {
+    "上装": [
+      ["过手袖", "sleeves_past_fingers"],
+      ["背心", "tank top"],
+      ["白衬衫", "white shirt"],
+      ["水手衬衫", "sailor shirt"],
+      ["T恤", "T-shirt"],
+      ["毛衣", "sweater"],
+      ["夏日长裙", "summer dress"],
+      ["连帽衫", "hoodie"],
+      ["毛领", "fur trimmed colla"],
+      ["兜帽斗篷", "hooded cloak"],
+      ["夹克", "jacket"],
+      ["皮夹克", "leather jacket"],
+      ["探险家夹克", "safari jacket"],
+      ["兜帽", "hood"],
+      ["牛仔夹克", "denim jacket"],
+      ["高领夹克", "turtleneck jacket"],
+      ["消防员夹克", "firefighter jacket"],
+      ["透明夹克", "see-through jacket"],
+      ["战壕大衣", "trench coat"],
+      ["实验室外套", "lab coat"],
+      ["羽绒服", "Down Jackets"],
+      ["防弹盔甲", "body armor"],
+      ["防弹衣", "flak jacket"],
+      ["大衣", "overcoat"],
+      ["粗呢大衣", "duffel coat"]
+    ],
+    "服装": [
+      ["透视装", "transparent clothes"],
+      ["燕尾服", "tailcoat"],
+      ["女仆装", "Victoria black maid dress"],
+      ["水手服", "sailor suit"],
+      ["学生服", "school uniform"],
+      ["职场制服", "bussiness suit"],
+      ["西装", "suit"],
+      ["军装", "military uniform"],
+      ["礼服", "lucency full dress"],
+      ["汉服", "hanfu"],
+      ["旗袍", "cheongsam"],
+      ["和服", "japanses clothes"],
+      ["运动服", "sportswear"],
+      ["工装服", "dungarees"],
+      ["婚纱", "wedding dress"],
+      ["银色连衣裙", "silvercleavage dress"],
+      ["长袍", "robe"],
+      ["围裙", "apron"],
+      ["快餐制服", "fast food uniform"],
+      ["JK制服", "JK"],
+      ["健身服", "gym_uniform"],
+      ["巫女服", "miko attire"],
+      ["海军陆战队服", "SWAT uniform"],
+      ["无袖连衣裙", "sleeveless dress"],
+      ["雨衣", "raincoat"],
+      ["机甲衣", "mech suit"],
+      ["巫师法袍", "wizard robe"],
+      ["刺客装束", "assassin-style"]
+    ],
+    "下装": [
+      ["牛仔短裤", "denim shorts"],
+      ["百褶裙", "pleated skirt"],
+      ["热裤", "short shorts"],
+      ["铅笔裙", "pencil skirt"],
+      ["皮裙", "leather skirt"],
+      ["黑色紧身裤", "black leggings"],
+      ["和服下的裙子", "skirt under kimono"]
+    ],
+    "其他服装": [
+      ["褶边", "frills"],
+      ["花边", "lace"],
+      ["哥特风格", "gothic"],
+      ["洛丽塔风格", "lolita fashion"],
+      ["西部风格", "western"],
+      ["湿身", "wet clothes"],
+      ["露单肩", "off_shoulder"],
+      ["露双肩", "bare_shoulders"],
+      ["格子花纹", "tartan"],
+      ["横条花纹", "striped"],
+      ["披甲", "armored skirt"],
+      ["盔甲", "armor"],
+      ["金属盔甲", "metal armor"],
+      ["狂战士铠甲", "berserker armor"],
+      ["腰带", "belt"],
+      ["围巾", "scarf"],
+      ["披肩", "cape"],
+      ["皮草披肩", "fur shawl"]
+    ],
+    "帽饰": [
+      ["棒球帽", "Baseball cap"],
+      ["针织帽", "Beanie"],
+      ["拿破仑帽", "Bicorne"],
+      ["太阳帽", "Boater hat"],
+      ["遮阳帽", "Visor cap"],
+      ["圆顶礼帽", "Bowler hat"],
+      ["报童帽", "Cabbie hat"],
+      ["渔夫帽", "Bucket hat"],
+      ["侦探帽", "Fedora"],
+      ["牛仔帽", "Cowboy hat"],
+      ["厨师帽", "Chef hat"],
+      ["军官帽", "Military hat"],
+      ["圣诞帽", "Santa hat"],
+      ["派对帽", "Party hat"],
+      ["小丑帽", "Jester cap"],
+      ["安全帽", "Hardhat"],
+      ["棒球头盔", "Baseball helmet"],
+      ["橄榄球头盔", "Football helmet"],
+      ["动物头盔", "animal helmet"],
+      ["女巫帽", "witch hat"],
+      ["贝雷帽", "beret"],
+      ["鸭舌帽", "peaked cap"],
+      ["草帽", "Straw hat"]
+    ]
+  },
+  "鞋饰": {
+    "鞋类": [
+      ["裸足", "bare_legs"],
+      ["靴子", "boots"],
+      ["马丁靴", "knee boots"],
+      ["脚踝靴", "ankle boots"],
+      ["系带靴", "cross-laced_footwear"],
+      ["战斗靴", "combat boots"],
+      ["装甲靴", "armored boots"],
+      ["过膝靴", "knee boots"],
+      ["防水橡胶靴", "rubber boots"],
+      ["皮靴", "leather boots"],
+      ["雪地靴", "snow boots"],
+      ["圣诞靴", "santa boots"],
+      ["鞋子", "shoes"],
+      ["厚底鞋", "platform footwear"],
+      ["尖头鞋", "pointy footwear"],
+      ["芭蕾舞鞋", "ballet slippers"],
+      ["运动鞋", "sneakers"],
+      ["旱冰鞋", "roller skates"],
+      ["溜冰鞋", "ice skates"],
+      ["钉鞋", "spiked shoes"],
+      ["高跟鞋", "high heels"],
+      ["玛丽珍鞋", "mary janes"],
+      ["乐福鞋", "loafers"],
+      ["女式学生鞋", "uwabaki"],
+      ["凉鞋", "sandals"],
+      ["木屐", "geta"],
+      ["拖鞋", "slippers"],
+      ["人字拖", "flip-flops"]
+    ],
+    "袜类": [
+      ["不穿袜子", "no socks"],
+      ["短袜", "socks"],
+      ["日式厚底短袜", "tabi"],
+      ["丝袜", "stockings"],
+      ["圣诞袜", "christmas stocking"],
+      ["暖腿袜", "leg warmers"],
+      ["荷叶边袜子", "frilled socks"],
+      ["丝带边袜子", "ribbon-trimmed legwear"],
+      ["闪亮袜子", "shiny legwear"],
+      ["褶边长筒袜", "frilled thighhighs"],
+      ["过膝袜", "thighhighs"],
+      ["渔网袜", "fishnet stockings"],
+      ["堆堆袜", "loose socks"],
+      ["裤袜", "leggings"],
+      ["蕾丝裤袜", "lace legwear"],
+      ["罗纹裤袜", "ribbed legwear"],
+      ["湿连裤袜", "wet pantyhose"],
+      ["格子裤袜", "plaid legwear"],
+      ["透视裤袜", "see-through legwear"],
+      ["连裤袜", "pantyhose"],
+      ["撕裂的连裤袜", "torn pantyhose"],
+      ["单腿连裤袜", "single leg pantyhose"],
+      ["荷叶边连裤袜", "frilled pantyhose"],
+      ["柳丁吊袜带", "studded garter belt"],
+      ["吊袜带", "sock dangle"],
+      ["大腿系带", "thigh strap"],
+      ["腿部花边环", "leg_garter"],
+      ["包扎腿", "bandaged leg"]
+    ]
+  },
+  "尾巴翅膀和角": {
+    "尾巴": [
+      ["宝可梦尾巴", "pokemon tail"],
+      ["皮卡丘尾巴", "pikachu tail"],
+      ["水獭尾巴", "otter tail"],
+      ["蝎尾", "scorpion tail"],
+      ["鹿尾", "deer tail"],
+      ["黄鼠狼尾巴", "weasel tail"],
+      ["羊驼尾巴", "alpaca tail"],
+      ["恐龙尾巴", "dinosaur tail"],
+      ["企鹅尾巴", "penguin tail"],
+      ["羊尾巴", "sheep tail"],
+      ["山羊尾巴", "goat tail"],
+      ["海狸尾巴", "beaver tail"],
+      ["小熊猫尾巴", "red panda tail"],
+      ["豺尾巴", "jackal tail"],
+      ["食蚁兽尾巴", "anteater tail"],
+      ["土狼尾巴", "aardwolf tail"],
+      ["猎豹尾巴", "panther tail"],
+      ["熊猫尾巴", "panda tail"],
+      ["天使尾巴", "Angel wings"]
+    ],
+    "翅膀": [
+      ["蝴蝶翅膀", "Butterfly wings"],
+      ["昆虫翅膀", "insect wings"],
+      ["蝙蝠翅膀", "Bat wings"],
+      ["鸟翼", "bird wings"],
+      ["羽翼", "feathered wings"],
+      ["妖精翅膀", "Fairy wings"],
+      ["龙之翼", "Dragon wings"],
+      ["恶魔之翼", "Demon wings"],
+      ["火焰翅膀", "Fiery wings"],
+      ["机械翅膀", "Mechanical wings"],
+      ["冰翅", "ice crystal texture"],
+      [
+        "冰火之翼",
+        "((burning feathers)),(feathers_made_of_ice),(frozen feathers),(((ice and fire together)))"
+      ]
+    ],
+    "角": [
+      ["羚羊角", "antelope horns"],
+      ["山羊角", "goat horns"],
+      ["羊角", "sheep horns"],
+      ["奶牛角", "cow horns"],
+      ["公牛角", "ox horns"],
+      ["鬼角", "oni horns"],
+      ["断角", "broken horn"],
+      ["机械角", "mechanical horns"],
+      ["恶魔之角", "demon horns"],
+      ["龙之角", "dragon horns"]
+    ]
+  },
+  "姿势": {
+    "姿态": [
+      ["侧身坐", "yokozuwari"],
+      ["鸭子坐", "ahirusuwari"],
+      ["盘腿", "indian style"],
+      ["跪着", "kneeling"],
+      ["躬躯", "arched back"],
+      ["膝枕", "lap pillow"],
+      ["学猫叫", "paw pose"],
+      ["单膝跪地", "one knee"],
+      ["蜷起身子侧躺", "fetal position"],
+      ["仰卧", "on back"],
+      ["俯卧", "on stomach"],
+      ["坐着", "sitting"],
+      ["屈膝抱腿坐", "hugging own legs"],
+      ["立式跨骑", "upright straddle"],
+      ["站着", "standing"],
+      ["蹲着", "squatting"],
+      ["绑在十字架上", "crucifixion"],
+      ["双腿缠绕", "leg lock"],
+      ["四肢着地", "all fours"],
+      ["戴耳机", "hand on headphones"],
+      ["鬼姿势", "ghost pose"],
+      ["回头", "turning around"],
+      ["歪头", "head tilt"],
+      ["前倾", "leaning forward"]
+    ],
+    "手势": [
+      ["嘘手势", "shushing"],
+      ["翘大拇指", "thumbs up"],
+      ["手放脑后", "arms behind head"],
+      ["手放身后", "arms behind back"],
+      ["手插口袋", "hand in pocket"],
+      ["双手插口袋", "hands in pocket"],
+      ["十指相扣", "interlocked fingers"],
+      ["V字手势", "victory pose"],
+      ["手在地板上", "hand on floor"],
+      ["手在额头上", "hand on forehead"],
+      ["手在肚子上", "hand on own stomach"],
+      ["手在肩膀上", "arm over shoulder"],
+      ["手搭别人的腿", "hand on another's leg"],
+      ["手搭别人的腰", "hand on another's waist"],
+      ["双手合十", "own hands clasped"],
+      ["翼展双臂", "wide open arms"],
+      ["手放嘴边", "hand to mouth"],
+      ["手枪手势", "finger gun"],
+      ["猫爪手势", "cat pose"]
+    ],
+    "视线": [
+      ["远眺", "looking afar"],
+      ["照镜子", "looking at mirror"],
+      ["看手机", "looking at phone"],
+      ["看向别处", "looking away"],
+      ["透过刘海看", "visible through hair"],
+      ["透过眼镜看", "looking over glasses"],
+      ["面向观者", "look at viewer"],
+      ["靠近观者", "close to viewer"],
+      ["动态角度", "dynamic angle"],
+      ["舞台角度", "dramatic angle"],
+      ["凝视", "stare"],
+      ["向上看", "looking up"],
+      ["向下看", "looking down"],
+      ["看向旁边", "looking to the side"],
+      ["移开目光", "looking away"]
+    ]
+  },
+  "动作": {
+    "整体": [
+      ["嗅闻", "smelling"],
+      ["公主抱", "princess carry"],
+      ["拥抱", "hug"],
+      ["背对背", "back-to-back"],
+      ["耶", "peace symbol"],
+      ["调整过膝袜", "adjusting_thighhigh"],
+      ["抓住", "grabbing"],
+      ["战斗姿态", "fighting_stance"],
+      ["走", "walking"],
+      ["跑", "running"],
+      ["跨坐", "straddling"],
+      ["跳", "jump"],
+      ["飞", "fly"],
+      ["靠墙", "against wall"],
+      ["躺", "lie"],
+      ["从背后抱", "hug from behind"],
+      ["遛狗", "walk a dog"],
+      ["提裙", "skirt lift"],
+      ["泡温泉", "half body under water"],
+      ["骑马", "horse riding"],
+      ["自拍", "selfie"],
+      ["一字马", "standing split"],
+      ["敬礼", "salute"],
+      ["祈祷", "pray"],
+      ["冥想", "doing a meditation"]
+    ],
+    "上半身": [
+      ["伸懒腰", "stretch"],
+      ["托腮", "gill support"],
+      ["牵手", "holding hands"],
+      ["单手叉腰", "hand_on_hip"],
+      ["双手叉腰", "hands_on_hips"],
+      ["招手", "ving"],
+      ["撮头发", "hair scrunchie"],
+      ["拉头发", "hair_pull"],
+      ["抓别人的头发", "grabbing another's hair"],
+      ["竖中指", "middle_finger"],
+      ["弯腰", "bent over"],
+      ["亲吻脸颊", "kissing cheek"],
+      ["亲吻额头", "kissing forehead"],
+      ["踮起脚尖吻", "tiptoe kiss"],
+      ["头顶水果", "fruit on head"],
+      ["咬手套", "glove biting"],
+      ["脸贴脸", "cheek-to-cheek"],
+      ["手牵手", "hand on another's hand"],
+      ["双手交叉", "crossed arms"],
+      ["双手张开伸直", "spread arms"],
+      ["挥动手臂", "waving arms"],
+      ["伸出手臂", "outstretched arm"],
+      ["用手臂支撑", "carrying"],
+      ["搂着手臂", "arm hug"],
+      ["拿着", "holding"],
+      ["拿着餐刀", "holding knife"],
+      ["拿着枪", "holding gun"],
+      ["拿着杯子", "holding cup"],
+      ["拿着食物", "holding food"],
+      ["拿着书", "holding book"],
+      ["拿着魔杖", "holding wand"],
+      ["打着伞", "holding umbrella"],
+      ["捧着花", "holding flower"],
+      ["拿着麦克风", "holding microphone"],
+      ["抱着物品", "object hug"],
+      ["抱着心", "holding heart"]
+    ]
+  },
+  "环境": {
+    "四季朝暮": [
+      ["春天", "in spring"],
+      ["夏天", "in summer"],
+      ["秋天", "in autumn"],
+      ["冬天", "in winter"],
+      ["黄昏", "dusk"],
+      ["夜晚", "night"],
+      ["秋景", "(autumn maple forest:1.3),(very few fallen leaves),(path)"]
+    ],
+    "日月星辰": [
+      ["太阳", "sun"],
+      ["落日", "sunset"],
+      ["月亮", "moon"],
+      ["满月", "full_moon"],
+      ["星星", "stars"],
+      ["天空", "sky"],
+      ["多云", "cloudy"],
+      ["雨天", "rain"],
+      ["冰雪", "snow,ice"],
+      ["雪花", "snowflakes"],
+      ["闪电", "lighting"],
+      ["彩虹", "rainbow"],
+      ["流星雨", "meteor shower"],
+      ["宇宙", "universe"]
+    ],
+    "天涯海角": [
+      ["大海", "sea"],
+      ["山丘", "hills"],
+      ["草地", "in a meadow"],
+      ["海滩", "on the beach"],
+      ["水中", "underwater"],
+      ["海边", "over the sea"],
+      ["树林", "grove"],
+      ["沙漠", "on a desert"],
+      ["高原", "plateau"],
+      ["悬崖", "cliff"],
+      ["峡谷", "canyon"],
+      ["绿洲", "oasis"],
+      ["竹林", "bamboo forest"],
+      ["冰川", "glacier"],
+      ["浮岛", "floating island"],
+      ["火山", "volcano"],
+      ["大草原", "savanna"],
+      ["瀑布", "waterfall"],
+      ["溪流", "stream"],
+      ["荒地", "wasteland"],
+      ["稻田", "rice paddy"],
+      ["麦田", "wheat field"],
+      ["花田", "flower field"],
+      ["花海", "flower sea"]
+    ],
+    "室内场景": [
+      ["室内", "indoor"],
+      ["窗帘", "curtain"],
+      ["床", "bed"],
+      ["浴室", "bathroom"],
+      ["厕所隔间", "toilet stall"],
+      ["宅男房间", "otaku room"],
+      ["自助餐厅", "cafeteria"],
+      ["教室", "classroom"],
+      ["俱乐部", "clubroom"],
+      ["沙龙", "salon"],
+      ["酒吧", "bar"],
+      ["居酒屋", "izakaya"],
+      ["咖啡馆", "cafe"],
+      ["面包店", "bakery"],
+      ["便利店", "convenience store"],
+      ["超市", "supermarket"],
+      ["书店", "bookstore"],
+      ["药店", "pharmacy"],
+      ["剧院", "theater"],
+      ["电影院", "movie theater"],
+      ["温室", "greenhouse"],
+      ["地库", "dungeon"],
+      ["健身房", "gym"],
+      ["医务室", "infirmary"],
+      ["实验室", "laboratory"],
+      ["图书馆", "library"],
+      ["工作坊", "workshop"],
+      ["舞台", "stage"],
+      ["法庭", "courtroom"]
+    ],
+    "城市建筑": [
+      ["城堡", "castle"],
+      ["城市", "city"],
+      ["水上乐园", "waterpark"],
+      ["旋转木马", "carousel"],
+      ["摩天轮", "ferris wheel"],
+      ["水族馆", "aquarium"],
+      ["动物园", "zoo"],
+      ["保龄球馆", "bowling alley"],
+      ["美术馆", "art gallery"],
+      ["博物馆", "museum"],
+      ["天文馆", "planetarium"],
+      ["游泳池", "swimming pool"],
+      ["体育场", "stadium"],
+      ["寺庙", "temple"],
+      ["巴士车站", "bus stop"],
+      ["火车站", "train station"],
+      ["喷泉", "fountain"],
+      ["游乐场", "playground"],
+      ["市场摊位", "market stall"],
+      ["电话亭", "phone booth"],
+      ["铁轨", "railroad tracks"],
+      ["机场", "airport"],
+      ["隧道", "tunnel"]
+    ],
+    "背景氛围": [
+      ["新年", "new year"],
+      ["兔年", "year of the rabbit"],
+      ["情人节", "valentine"],
+      ["元宵节", "lantern festival"],
+      ["夏日祭", "summer festival"],
+      ["七夕节", "tanabata"],
+      ["中秋节", "mid-autumn festival"],
+      ["万圣节", "halloween"],
+      ["圣诞节", "christmas"],
+      ["爆炸", "explosion"],
+      ["蒸汽", "water vapor"],
+      ["焰火", "fireworks"],
+      ["落地窗", "ceiling window"],
+      ["彩色玻璃", "colourful glass"],
+      ["染色玻璃", "stain glass"],
+      ["涂鸦墙", "Graffiti wall"],
+      ["马赛克背景", "mosaic background"],
+      ["液体背景", "liquid background, Sputte..."],
+      ["魔法环", "magic circles"],
+      ["荧光蘑菇森林", "fluorescent mushroom fore..."],
+      ["彩色泡泡", "(((colorful bubble)))"]
+    ]
+  },
+  "风格": {
+    "艺术风格": [
+      ["8bit游戏", "8 Bit Game"],
+      ["80年代动画", "1980s anime"],
+      ["迪士尼电影", "disney movie"],
+      ["哥特摇滚", "goth"],
+      ["80年代电影", "80s movie"],
+      ["泡泡龙", "bubble bobble"],
+      ["皮克斯动画", "style of Pixar"],
+      ["宝丽来艺术", "Polaroid art"],
+      ["万花筒摄影", "Kaleidoscope Photography"],
+      ["欧泊渲染", "opal render"],
+      ["色谱图", "chemigram"],
+      ["吉卜力风格", "Studio Ghibli"],
+      ["梦幻", "dreamlike"],
+      ["签绘风格", "(faux traditional media)"],
+      ["原神冲击", "genshin impact"],
+      ["碧蓝航线", "azur lane"],
+      ["舰队收藏", "kantai collection"],
+      ["边缘行者", "rebecca (cyberpunk)"],
+      ["电锯人", "chainsaw man"],
+      ["魔法旋涡", "Magic Vortex"],
+      ["柴油朋克", "((dieselpunk))"],
+      ["四格", "4koma"],
+      ["杂志扫描", "magazine scan"],
+      ["专辑封面", "album cover"],
+      ["线条变粗", "(lineart)"],
+      ["蒸汽波", "synthwave"],
+      [
+        "洛可可",
+        "(illustration),(paper figure),(lococo),((impasto)),(shiny skin)"
+      ]
+    ],
+    "艺术类型": [
+      ["单色图片", "monochrome"],
+      ["拼贴艺术", "Collage"],
+      ["彩色玻璃工艺", "Dalle de verre"],
+      ["像素画", "pixel art"],
+      ["瓷画", "Encaustic painting"],
+      ["水墨画", "Ink wash painting"],
+      ["铜版雕刻", "Mezzotint"],
+      ["剪影", "silhouette"],
+      ["插画", "illustration"],
+      ["水彩画", "(((ink))), ((watercolor))"],
+      ["浮世绘", "illustration,(((ukiyoe))),((sketch)),((japanese_art))"],
+      [
+        "中国风",
+        "((wash painting)),((ink splashing)),((color splashing)),((((dyeing)))),((chinese style))"
+      ],
+      ["油画", "((dyeing)),((oil painting)),((impasto))"],
+      ["黑白草图", "(posing sketch), (monochrome)"],
+      ["手画草稿", "sketch"],
+      ["铅笔速写", "(monochrome), (gray scale), (pencil sketch lines)"],
+      ["彩铅画", "(watercolor pencil)"]
+    ],
+    "艺术派系": [
+      ["新艺术主义", "((art nouveau))"],
+      ["古典主义", "((classicism))"],
+      ["未来主义", "((futurism))"],
+      ["达达主义", "((Dadaism))"],
+      ["抽象艺术", "((abstract art))"],
+      ["ASCII艺术", "((ASCII art))"]
+    ],
+    "艺术家风格": [
+      ["穆夏风格", "((alphonse mucha))"],
+      ["莫奈风格", "((Monet style))"]
+    ],
+    "光照": [
+      ["轮廓光", "rim light"],
+      ["体积光", "Volumetric Lighting"],
+      ["霓虹灯", "glowing neon lights"],
+      ["电影级光照", "Cinematic Lighting"],
+      ["透镜光晕", "lens flare"],
+      ["金属光泽", "metallic luster"],
+      ["氛围光照", "moody lighting"],
+      ["丁达尔效应", "Tyndall effect"],
+      ["漏光光效", "light leaks"],
+      ["背景光", "background light"],
+      ["自然光", "available light"]
+    ]
+  },
+  "R18": {
+    "R18 Tags Normal": [
+      ["触手", "tentacle"],
+      ["发交", "hairjob"],
+      ["口交", "oral/fellatio"],
+      ["深喉", "deepthroat"],
+      ["吃精", "gokkun"],
+      ["口塞", "gag"],
+      ["球塞", "ballgag"],
+      ["棍塞", "bitgag"],
+      ["扩口器", "ring_gag"],
+      ["用布勒住嘴", "cleave_gag"],
+      ["用内裤塞口", "panty_gag"],
+      ["胶带封口", "tapegag"],
+      ["颜射", "facial"],
+      ["宠物链", "leash"],
+      ["用手做", "handjob"],
+      ["摸索", "groping"],
+      ["乳晕", "areolae"],
+      ["乳头", "nipples"],
+      ["大乳头", "puffy_nipples"],
+      ["小乳头", "small_nipples"],
+      ["啦乳头", "nipple_pull"],
+      ["虐乳头", "nipple_torture"],
+      ["捏乳头", "nipple_tweak"],
+      ["乳头穿孔", "nipple_piercing"],
+      ["摸乳", "breast_grab"],
+      ["哺乳", "lactation"],
+      ["乳交", "paizuri"],
+      ["多P乳交", "multiple_paizuri"],
+      ["把头塞入胸", "breast_smother"],
+      ["穿孔", "piercing"],
+      ["肚脐穿孔", "navel_piercing"],
+      ["腿交", "thigh_sex"],
+      ["足交", "footjob"],
+      ["腹部三角带", "mound_of_venus"],
+      ["宽盆骨", "wide_hips"],
+      ["自慰", "masturbation"],
+      ["隔着衣服自慰", "clothed_masturbation"],
+      ["阳具/屌", "penis"],
+      ["睾丸/蛋蛋", "testicles"],
+      ["射出", "ejaculation"],
+      ["射精", "cum"],
+      ["内射", "cum_inside"],
+      ["射在胸上", "cum_on_breast"],
+      ["射在头发上", "cum_on_hair"],
+      ["射在食物上", "cum_on_food"],
+      ["蛋疼", "tamakeri"],
+      ["阴户", "pussy/vaginal"],
+      ["阴毛", "pubic_hair"],
+      ["剃过阴毛的", "shaved_pussy"],
+      ["没逼的", "no_pussy"],
+      ["阴蒂", "clitoris"],
+      ["肥逼", "fat_mons"],
+      ["骆驼脚趾逼", "cameltoe"],
+      ["爱液", "pussy_juice"],
+      ["巨大插入", "large_insertion"],
+      ["拳头插入", "fisting"],
+      ["菊花插入物", "anal_insertion"],
+      ["手插入", "fingering"],
+      ["插入物", "insertion"],
+      ["潮吹", "female_ejaculation"],
+      ["性器摩擦", "grinding"],
+      ["用水果蔬菜", "fruit_insertion"],
+      ["胯部摩擦", "crotch_rub"],
+      ["坐在脸上", "facesitting"],
+      ["子宫口", "cervix"],
+      ["舔阴", "cunnilingus"],
+      ["一穴多插", "multiple_insertions"],
+      ["双穴同插", "double_penetration"],
+      ["三穴同插", "triple_penetration"],
+      ["双重入穴", "double_vaginal"],
+      ["尿尿", "peeing"],
+      ["憋尿", "have_to_pee"],
+      ["屁股", "ass"],
+      ["大屁股", "huge_ass"],
+      ["用手张开屁股", "spread_ass"],
+      ["臀交", "buttjob"],
+      ["打屁股", "spanked"],
+      ["菊花", "anus"],
+      ["爆菊", "anal"],
+      ["双重爆菊", "double_anal"],
+      ["手爆菊", "anal_fingering"],
+      ["拳爆菊", "anal_fisting"],
+      ["肛吻", "anilingus"],
+      ["灌肠", "enema"],
+      ["肚子胀", "stomach_bulge"],
+      ["透视人体内部", "x-ray/cross-section/internal_cumshot"],
+      ["酒倒在阴部", "wakamezake"],
+      ["公共场所", "public"],
+      ["羞耻play", "humiliation"],
+      ["胸罩拉到胸上方", "bra_lift"],
+      ["内裤挂在一条腿上", "panties_around_one_leg"],
+      ["被发现", "caught"],
+      ["进门被发现", "walk"],
+      ["身上有字", "body_writing"],
+      ["在身上计数", "tally"]
+    ],
+    "More": [
+      ["双性", "futanari"],
+      ["乱伦", "incest"],
+      ["兄弟/姐妹/姐弟/兄妹", "twincest"],
+      ["女性使用假屌", "pegging"],
+      ["女奸男", "femdom"],
+      ["日本黑妹", "ganguro"],
+      ["人兽", "bestiality"],
+      ["轮奸", "gangbang"],
+      ["3P", "threesome"],
+      ["群P", "group_sex/orgy/teamwork"],
+      ["磨豆腐", "tribadism"],
+      ["性骚扰", "molestation"],
+      ["窥阴癖", "voyeurism"],
+      ["裸露癖", "exhibitionism"],
+      ["强暴", "rape"],
+      ["将要被强暴", "about_to_be_raped"],
+      ["性爱", "sex"],
+      ["穿着衣服做爱", "clothed_sex"],
+      ["快乐做爱", "happy_sex"],
+      ["水中做爱", "underwater_sex"],
+      ["前后夹攻", "spitroast"],
+      ["插在过膝袜里", "cock_in_thighhigh"]
+    ],
+    "体位": [
+      ["69式", "69"],
+      ["狗爬式", "doggystyle"],
+      ["跨坐式", "leg_lock/upright_straddle"],
+      ["传教士体位", "missionary"],
+      ["女上体位", "girl_on_top"],
+      ["女上正骑", "cowgirl_position"],
+      ["女上反骑", "reverse_cowgirl"],
+      ["处女", "virgin"]
+    ],
+    "SM": [
+      ["奴隶", "slave"],
+      ["捆绑", "shibari"],
+      ["捆绑/奴役", "bondage"],
+      ["绑缚与调教/支配与臣服/施虐与受虐", "bdsm"],
+      ["枷锁", "pillory/stocks"],
+      ["绳子", "rope"],
+      ["手臂捆绑", "bound_arms"],
+      ["手腕捆绑", "bound_wrists"],
+      ["胯下捆绑", "crotch_rope"],
+      ["曲膝捆绑", "hogtie"],
+      ["青蛙捆绑", "frogtie"],
+      ["悬空捆绑", "suspension"],
+      ["分腿捆绑", "spreader_bar"]
+    ],
+    "道具": [
+      ["木马", "wooden_horse"],
+      ["肛珠", "anal_beads"],
+      ["假屌", "dildo"],
+      ["屌环", "cock_ring"],
+      ["跳蛋", "egg_vibrator"],
+      ["人工阴道", "artificial_vagina"],
+      ["按摩棒", "hitachi_magic_wand"],
+      ["人造阴茎", "dildo"],
+      ["双头龙", "double_dildo"],
+      ["跳蛋", "vibrator"],
+      ["跳蛋遥控在过膝袜里", "vibrator_in_thighhighs"]
+    ],
+    "R18G": [
+      ["女体盛", "nyotaimori"],
+      ["吃人", "vore"],
+      ["截肢", "amputee"],
+      ["肉体变形", "transformation"],
+      ["思想操控", "mind_control"],
+      ["审核过的/有码", "censored"],
+      ["未审核的/无码", "uncensored"],
+      ["亚洲", "asian"],
+      ["无脸男", "faceless_male"],
+      ["血", "blood"]
+    ]
+  }
 }
